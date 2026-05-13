@@ -16,7 +16,7 @@
 İki ana bölüm + yeni perspektifler:
 
 - **BÖLÜM A1 (Hesaplama Hub)** — Calculator fikirleri ve kelime listeleri
-- **BÖLÜM A2 (Tatil & Bayram Hub)** — Resmi tatil ve bayram fikirleri
+- **BÖLÜM A2 (Tatil & Bayram Hub)** — Mevcut `/kampanya/resmi-tatil-gunleri/` sayfasını genişletme (yeni sayfa açılmıyor)
 - **BÖLÜM A3 (Özel Gün & Mesaj)** — Özel günler + mesaj kartları
 - **BÖLÜM A4 (Telekom Yardım & Sorgu)** — Brand-uyumu en yüksek cluster
 - **BÖLÜM A5 (AI, Siber, Diğer)** — Tech blog ve niş fikirler
@@ -41,7 +41,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 | 2026 Planı | Bu Raporun Karşılığı | Hedef |
 |---|---|---|
 | Hesaplama sayfaları | A1 ve A6.1 (Data Calculator) | 5.5M hacim → 500K+ click |
-| Alternatif mass trafik LP'ler | A6.2 (Hava durumu), A2, A3 | 44M hacim → 500K+ click |
+| Alternatif mass trafik LP'ler | A6.2 (Hava durumu yeni LP), A3 (yeni LP), A2 (mevcut /kampanya/resmi-tatil-gunleri/ sayfasını genişletme) | 44M hacim → 500K+ click |
 | Paket listeleme sayfalarına içerik | A6.8 | %7-10 click artış |
 | Aylık düzenli blog | Tüm A4/A5 cluster'ları besler | %5-7 click artış |
 | Schema markup | Her sayfa tipinde önerildi | %6-10 click artış |
@@ -69,7 +69,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 |---|---|
 | Hava durumu (A6.2) | ~95M (tüm varyantlar dahil) |
 | Hesaplama hub (A1) | ~5.5M |
-| Resmi tatil & bayram (A2) | ~10M |
+| Resmi tatil & bayram (A2 - mevcut sayfa genişletme) | ~10M |
 | Özel gün & mesaj (A3) | ~5M |
 | Telekom yardım (A4) | ~3M |
 | AI / Siber / Diğer (A5) | ~3M |
@@ -270,67 +270,97 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ---
 
-## A2. RESMİ TATİL & BAYRAM HUB ★★★
+## A2. RESMİ TATİL & BAYRAM HUB ★★★ — Mevcut Sayfayı Genişletme
 
-### A2.1 Ana Hub
-- **DfS:** resmi tatiller 2026 = 22.200/ay, KD 3 ★★★ (yıllık trend +%8.303); resmi tatil günleri = 6.600/ay, KD 8
-- **Vodafone modeli:** `/resmi-tatiller` = 30.896 aylık trafik, 579 keyword
+> **Önemli karar:** A2 için **yeni sayfa açılmıyor, alt sayfa oluşturulmuyor.** Mevcut `https://www.turkcell.com.tr/kampanya/resmi-tatil-gunleri/` sayfası tatil & bayram cluster'ının tamamı için tek hub olarak genişletilecek.
 
-**Varyasyon listesi:**
-- `resmi tatiller 2026`, `resmi tatiller 2026 listesi`, `resmi tatil günleri`
-- `2026 15 tatil ne zaman` (14.000), `2026 15 tatil` (1.800), `9-10 gün tatil 2026`, `bağlı tatil 2026`
-- `yarı yıl tatili 2026` (11.000+7.200), `yariyil tatili`, `sömestr ne zaman` (11.000)
-- `yaz tatili ne zaman 2026` (11.000), `kasım tatili 2025` (16.000)
+### Fikir 17: **/kampanya/resmi-tatil-gunleri/** sayfasını mega-hub olarak genişletme (\*)
+- **URL:** `https://www.turkcell.com.tr/kampanya/resmi-tatil-gunleri/` (DEĞİŞMEZ, yeni URL yok)
+- **DfS ana KW'ler:** resmi tatiller 2026 = 22.200/ay (KD 3, yıllık trend +%8.303); resmi tatil günleri = 6.600/ay (KD 8)
+- **Referans model:** Vodafone `/resmi-tatiller` = 30.896 aylık trafik, 579 keyword (TEK SAYFA)
+- **Strateji:** Mevcut sayfaya tatil/bayram/özel gün ekosistemindeki **tüm uzun kuyruk query'leri** yapısal bölümler + accordion (SSS) + dinamik geri sayım widget ile entegre et.
+
+### A2.1 Sayfa İçerik Mimarisi (mevcut sayfaya eklenecek bloklar)
+
+| Blok | İçerik | Hedef KW Kümesi (DfS) |
+|---|---|---|
+| **1. Yıllık Resmi Tatil Takvimi (dinamik)** | 2026 (aktif yıl), 2025, 2027 toggle. Her gün için: tarih, ad, "tatil mi", "kaç gün" | resmi tatiller 2026 (22.200), resmi tatil günleri (6.600), 2026 15 tatil ne zaman (14.000) |
+| **2. Dini Bayramlar Bölümü** | Kurban Bayramı, Ramazan Bayramı, kandiller (her biri accordion) | kurban bayramı ne zaman (1.22M, Mayıs 6M), ramazan ne zaman 2026 (18.000) |
+| **3. Milli Bayramlar Bölümü** | 29 Ekim, 23 Nisan, 19 Mayıs, 30 Ağustos, 10 Kasım, 18 Mart, 1 Mayıs | 29 ekim cumhuriyet bayramı (450.000, Ekim 5M) |
+| **4. Okul Tatilleri Bölümü** | Yarı yıl, sömestr, yaz tatili, MEB takvim | yarı yıl tatili 2026 (11.000), sömestr ne zaman (11.000), yaz tatili 2026 (11.000), kasım tatili (16.000) |
+| **5. Yılbaşı ve Yeni Yıl** | 31 Aralık, yeni yıl, yılbaşı tatili | 31 aralık tatil mi (13.000, KD 0), yılbaşı hangi güne (1.700) |
+| **6. Uzun Tatil Planı (9-15 gün)** | Bağlı tatiller, izin alarak uzayan tatiller | 2026 15 tatil ne zaman (14.000), 9 gün tatil 2026, 10 gün tatil, bağlı tatil 2026 |
+| **7. "Bugün Tatil mi?" Hızlı Sorgu** | Dinamik kontrol widget'ı (bugün tatil mi, X tarihinde tatil mi) | bugün tatil mi (2.000), pazartesi günü okullar tatil mi (2.100), 29 ekim tatil mi (10.000), 18 mart resmi tatil mi (6.800), arefe günü tatil mi (5.800+2.500) |
+| **8. "Kaç Gün Kaldı?" Geri Sayım Widget'ları** | Önümüzdeki resmi tatillere geri sayım | bayrama kaç gün kaldı (2.600), kurban bayramına kaç gün (3.200+), ramazan'a kaç gün (13.000) |
+| **9. Black Friday & Alışveriş Günleri** | Kara Cuma, Cyber Monday, 11.11 | black friday ne zaman (31.000), kara cuma ne zaman (13.000) |
+| **10. SSS Bloku (AI Overview için)** | "Kurban bayramı hangi gün?", "29 Ekim resmi tatil mi?", "Yarıyıl tatili ne zaman?" gibi 30-40 soru | uzun kuyruk varyasyonlar |
+
+### A2.2 Mevcut Sayfaya Eklenecek Tam Kelime Listesi
+
+**Resmi Tatil Takvimi & Hub anahtarları:**
+- `resmi tatiller 2026` (22.200, KD 3), `resmi tatiller 2026 listesi`, `resmi tatil günleri` (6.600, KD 8)
+- `2026 15 tatil ne zaman` (14.000), `2026 15 tatil` (1.800), `2025 15 tatil ne zaman` (5.700)
+- `9 gün tatil 2026`, `10 gün tatil`, `bağlı tatil 2026`
 - `okul tatilleri 2026`, `meb tatil takvimi 2026`
-- `bugün tatil mi` (2.000), `pazartesi günü okullar tatil mi` (2.100)
+- `yarı yıl tatili 2026` (11.000), `yariyil tatili`, `sömestr ne zaman` (11.000), `2026 yarıyıl tatili` (7.200)
+- `yaz tatili ne zaman 2026` (11.000), `kasım tatili 2025` (16.000)
 
-### A2.2 Dini Bayramlar
-
-#### Fikir 17: **/kurban-bayrami-2026/**
-- **DfS:** 1.220.000/ay (Mayıs 6M zirve), KD 11
-- **Varyasyon listesi:**
-- `kurban bayramı ne zaman`, `2025 kurban bayramı ne zaman` (77.000)
+**Dini bayramlar (Kurban Bayramı):**
+- `kurban bayramı ne zaman` (10.000+ + yıl-bazlı), `2025 kurban bayramı ne zaman` (77.000)
 - `kurba bayram ne zaman 2025` (41.000), `bayram ne zaman 2025` (13.000)
-- `2026 kurbanlık bayramı diyanet` (7.300)
-- `kurban bayramı hangi gün`, `kurban bayramı tarihi`, `kurban bayramı hangi ayda` (3.400)
-- `kurban bayramı kaçında` (1.400), `kurban bayramı ayın kaçına` (1.900)
+- `2026 kurbanlık bayramı diyanet` (7.300), `kurbann bayramı 2025` (6.300)
+- `kurban bayramı hangi gün`, `kurban bayramı tarihi` (1.600)
+- `kurban bayramı hangi ayda` (3.400), `kurban bayramı kaçında` (1.400), `kurban bayramı ayın kaçına` (1.900)
 - `arefe günü tatil mi` (5.800+2.500), `arefe ne zaman` (5.400), `arefe hangi gün` (2.400)
 - `bayrama kaç gün kaldı` (2.600), `kurban bayramı geri sayım`
 
-#### Fikir 18: **/ramazan-2026/**
-- ramazan ne zaman başlıyor 2026 (18.000, KD 0)
-- 2025 ramazan'a kaç gün kaldı (13.000)
-- iftar vakti istanbul/ankara/izmir (Ramazan'da 1M+ il bazlı)
-- imsak vakti il bazlı (823.000)
-- namaz vakitleri il bazlı (13.6M)
-- oruç tutma niyeti, ramazan ayı duaları
+**Dini bayramlar (Ramazan Bayramı):**
+- `ramazan ne zaman başlıyor 2026` (18.000, KD 0)
+- `2026 ramazan ne zaman başlıyor` (8.700), `2025 ramazan'a kaç gün kaldı` (13.000)
+- `ramazan bayramı kaçında` (2.400), `ramazan bayramı hangi gün 2025` (1.300)
 
-#### Fikir 19: **/dini-gunler-kandiller/**
-- Mevlit, Regaip, Berat, Miraç Kandili, Kadir Gecesi
-- Kandil mesajları, kandil duaları
+**Kandiller:**
+- `mevlit kandili ne zaman`, `berat kandili`, `kadir gecesi`, `regaip kandili`, `miraç kandili`
+- `kandil günleri 2026`, `kandil mesajları`
 
-### A2.3 Milli Bayramlar
+**Milli bayramlar:**
+- `29 ekim cumhuriyet bayramı` (450.000, Ekim 5M), `29 ekim` (varyasyonlar), `29 ekim 1923 hangi gün` (2.600)
+- `29 ekim hangi gün` (3.600), `29 ekim tatil mi` (10.000), `29 ekim resmi tatil mi` (9.500)
+- `29 ekim cumhuriyet bayramı tatil mi` (1.800), `cumhuriyet bayramı resmi` (1.800)
+- `23 nisan ulusal egemenlik ve çocuk bayramı`, `23 nisan tatil mi`
+- `19 mayıs atatürk'ü anma`, `19 mayıs tatil mi`
+- `30 ağustos zafer bayramı`, `30 ağustos tatil mi`
+- `18 mart çanakkale şehitlerini anma günü` (6.800)
+- `on kasım resmi tatil mi` (1.200), `10 kasım anma töreni`
+- `1 mayıs emek ve dayanışma günü` (1.300)
 
-#### Fikir 20: **/29-ekim-cumhuriyet-bayrami/**
-- 450.000/ay (Ekim'de 5M)
-- `29 ekim`, `29 ekim 1923`, `29 ekim mesajları` (880, Ekim 12K), `29 ekim hangi gün` (3.6K)
-- `29 ekim tatil mi` (10K), `29 ekim resmi tatil mi` (9.5K)
-- `cumhuriyet bayramı tarihçesi`, `atatürk cumhuriyet sözleri`
+**Yılbaşı:**
+- `yılbaşı ne zaman`, `31 aralık tatil mi` (13.000, KD 0), `yılbaşı hangi güne denk geliyor` (1.700)
+- `yılbaşı 2026`, `yeni yıl tatili`
 
-#### Fikir 21: **/diger-milli-bayramlar/**
-- 23 Nisan Çocuk Bayramı, 19 Mayıs Gençlik, 30 Ağustos Zafer
-- 18 Mart Çanakkale (6.800), 10 Kasım Atatürk (1.200), 1 Mayıs Emek
+**Bugün/genel sorgular:**
+- `bugün tatil mi` (2.000), `pazartesi günü okullar tatil mi` (2.100)
+- `9 haziran okullar tatil mi` (1.400) ve benzer tarih bazlı varyasyonlar
 
-### A2.4 Yılbaşı ve Diğer Spike Günler
+**Black Friday & alışveriş günleri:**
+- `black friday ne zaman` (31.000), `black friday 2026`, `black friday türkiye`
+- `kara cuma ne zaman` (13.000), `kara cuma indirimleri`
+- `cyber monday`, `11.11 singles day`
 
-#### Fikir 22: **/yilbasi-2026/**
-- yılbaşı ne zaman, 31 aralık tatil mi (13.000, KD 0), yılbaşı hangi güne (1.7K)
-- yılbaşı filmleri (4.4K), yılbaşı mesajları, yılbaşı menüsü
+### A2.3 Teknik Uygulama Notları
 
-#### Fikir 23: **/black-friday-ve-alisveris-gunleri/**
-- black friday ne zaman (31.000, Vodafone 3.)
-- kara cuma ne zaman (13.000, MediaMarkt 2.)
-- cyber monday, singles day
+- **Schema markup:** `Event` (her tatil için), `FAQPage` (SSS bloku için), `BreadcrumbList`
+- **İçerik dinamik:** "Bugün tatil mi?" widget'ı server-time veya client-time ile gerçek zamanlı
+- **Yıllık güncellenmeli:** Yıl değiştikçe canlı tablo otomatik güncellenmeli (CMS field)
+- **Internal link:** A3 (özel gün mesajları), A6.2 (hava durumu), A1 (kaç gün kaldı hesaplama) sayfalarına bağlantı
+- **Mevcut sayfa kanibalizasyon kontrolü:** Resmi tatil ile ilgili dağınık destek/SSS sayfaları varsa 301 ile bu sayfaya birleştirilmeli
+
+### A2.4 Notlar
+
+- **YENİ SAYFA AÇILMIYOR** - tüm tatil/bayram cluster'ı bu tek sayfada toplanır
+- **Vodafone modeli daha dağınık (579 ayrı keyword için ana hub + alt linkler)**; Turkcell yaklaşımı **tek mega-hub** olarak daha derli toplu olabilir
+- Mevcut /kampanya/resmi-tatil-gunleri/ sayfasının mevcut içeriği KORUNUR, üzerine ek bloklar eklenir
+- Spike aylarında (Mart-Mayıs, Ekim, Aralık) ek SEM/social desteği değerlendirilebilir
 
 ---
 

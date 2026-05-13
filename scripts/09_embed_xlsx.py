@@ -1,6 +1,7 @@
 """
 xlsx -> base64 -> HTML embed
-HTML icindeki XLSX_B64_PLACEHOLDER stringini gercek base64 verisi ile degistirir.
+HTML icindeki onceki xlsxData script tag'lerini temizler ve yenisini ekler.
+Idempotent: kac kez calistirilirsa calistirilsin tek bir embed kalir.
 """
 import base64
 import re
@@ -22,24 +23,21 @@ print(f"base64 size: {len(b64):,} chars ({len(b64)/1024/1024:.2f} MB)")
 with open(HTML, "r", encoding="utf-8") as f:
     html = f.read()
 
-# 3) Build replacement marker - if marker exists, replace it
-marker = "/*__XLSX_B64_PLACEHOLDER__*/"
-new_script = f'window.__XLSX_B64__ = "{b64}";'
+# 3) Onceki xlsxData script tag'lerini sil (idempotent)
+pattern = re.compile(r'\n?<script id="xlsxData">window\.__XLSX_B64__ = "[^"]*";</script>\n?', re.DOTALL)
+matches = pattern.findall(html)
+print(f"Removing {len(matches)} existing xlsxData script(s)")
+html = pattern.sub("", html)
 
-if marker in html:
-    html = html.replace(marker, new_script)
-    print("Replaced existing placeholder.")
-else:
-    # If first run, inject as a script just before closing </body>
-    inject = f'\n<script id="xlsxData">window.__XLSX_B64__ = "{b64}";</script>\n</body>'
-    if "</body>" in html:
-        html = html.replace("</body>", inject, 1)
-        print("Injected xlsxData script before </body>.")
-    else:
-        print("No </body> found. ERROR.")
-        exit(1)
+# 4) Yenisini </body>'den once enjekte et
+inject = f'\n<script id="xlsxData">window.__XLSX_B64__ = "{b64}";</script>\n</body>'
+if "</body>" not in html:
+    print("ERROR: </body> not found")
+    raise SystemExit(1)
+html = html.replace("</body>", inject, 1)
+print("Injected fresh xlsxData script.")
 
-# 4) Write back
+# 5) Write back
 with open(HTML, "w", encoding="utf-8") as f:
     f.write(html)
 
