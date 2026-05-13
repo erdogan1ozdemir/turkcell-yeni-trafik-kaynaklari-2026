@@ -1,0 +1,3340 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Turkcell.com.tr için 60.715 anahtar kelime üzerinden çıkarılan yeni trafik fırsatları - Ahrefs Content Gap + DataForSEO doğrulama + 2026 plan perspektifleri.">
+<title>Turkcell - Yeni Trafik Fırsatları Raporu · 2026</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+<style>
+/* ============================================================
+   INBOUND DESIGN SYSTEM - TOKENS
+   ============================================================ */
+:root {
+  --coral:        #FF7B52;
+  --coral-tint:   #FFE3D8;
+  --coral-deep:   #E85F36;
+  --teal:         #10332F;
+  --teal-soft:    #1A4238;
+  --mint:         #E8F5E9;
+
+  --white:        #FFFFFF;
+  --off-white:    #FAF8F5;
+  --ink:          #10332F;
+  --ink-2:        #4A4A4A;
+  --ink-3:        #8A8A8A;
+  --line:         #E0E0E0;
+  --line-soft:    #F0EDE8;
+
+  --red:          #D32F2F;
+  --red-wash:     #FFCDD2;
+  --green:        #2E7D32;
+  --green-wash:   #C8E6C9;
+  --gold:         #F5A623;
+  --gray-bar:     #4A4A4A;
+  --trend-red:    #E53935;
+
+  --font-display: 'Bricolage Grotesque', 'Calibri', system-ui, sans-serif;
+  --font-body:    'Outfit', 'Calibri', system-ui, sans-serif;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 20px;
+  --r-pill: 999px;
+
+  --shadow-card: 0 2px 8px rgba(16, 51, 47, 0.08);
+  --shadow-card-hover: 0 6px 20px rgba(16, 51, 47, 0.12);
+  --shadow-pop: 0 12px 32px rgba(16, 51, 47, 0.16);
+
+  --sidebar-width: 300px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--teal);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.progress-bar {
+  height: 3px; background: var(--coral);
+  width: 0; position: fixed; top: 0; left: 0; z-index: 9999;
+  transition: width 0.1s;
+}
+
+.menu-toggle {
+  position: fixed; top: 18px; left: 18px;
+  background: var(--teal); color: white; border: none;
+  width: 44px; height: 44px; border-radius: 999px;
+  cursor: pointer; z-index: 1001; display: none;
+  align-items: center; justify-content: center;
+  font-size: 20px; box-shadow: var(--shadow-pop);
+}
+
+.back-to-top {
+  position: fixed; bottom: 24px; right: 24px;
+  background: var(--coral); color: white;
+  width: 48px; height: 48px; border-radius: 50%;
+  display: none; align-items: center; justify-content: center;
+  font-size: 20px; cursor: pointer;
+  text-decoration: none;
+  box-shadow: var(--shadow-pop);
+  transition: background 0.22s, transform 0.22s;
+  z-index: 1000;
+}
+.back-to-top:hover { background: var(--coral-deep); transform: translateY(-2px); }
+
+.container-wrapper { display: grid; grid-template-columns: var(--sidebar-width) 1fr; min-height: 100vh; }
+
+/* ============================================================
+   SIDEBAR - Inbound dark teal
+   ============================================================ */
+.sidebar {
+  position: sticky; top: 0; align-self: start;
+  height: 100vh; overflow-y: auto;
+  background: var(--teal); color: var(--white);
+  padding: 28px 22px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.3s cubic-bezier(.2,.8,.2,1);
+  z-index: 100;
+}
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+
+.sidebar-brand {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 6px;
+}
+.sidebar-brand .o-mark {
+  width: 30px; height: 30px;
+  border: 2.5px solid var(--coral);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.sidebar-brand .wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.sidebar-tagline {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.sidebar-section-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--coral);
+  padding: 0 12px;
+  margin: 18px 0 8px;
+}
+.sidebar nav ul { list-style: none; }
+.sidebar nav a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 12px;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  margin-bottom: 2px;
+  transition: all 0.18s cubic-bezier(.2,.8,.2,1);
+}
+.sidebar nav a:hover {
+  background: rgba(255,123,82,0.1);
+  color: var(--white);
+}
+.sidebar nav a.active {
+  background: rgba(255,123,82,0.15);
+  color: var(--white);
+  border-left-color: var(--coral);
+  font-weight: 600;
+}
+.sidebar nav a .num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--coral);
+  width: 22px;
+  flex-shrink: 0;
+}
+.sidebar nav a .new-badge {
+  margin-left: auto;
+  background: var(--coral);
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 9px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+}
+
+.sidebar-footer {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+}
+.sidebar-footer strong { color: var(--coral); font-family: var(--font-display); }
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+.main-content {
+  padding: 48px 64px 80px;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.hero {
+  margin-bottom: 64px;
+  position: relative;
+}
+.hero .breadcrumb {
+  display: inline-flex; align-items: baseline; gap: 6px;
+  font-size: 11px;
+  color: var(--coral);
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+.hero .breadcrumb .section { font-family: var(--font-display); font-weight: 700; }
+.hero .breadcrumb .sep { opacity: 0.6; }
+.hero .breadcrumb .title { font-family: var(--font-body); opacity: 0.85; }
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--teal);
+  margin-bottom: 18px;
+  max-width: 880px;
+}
+.hero .accent-line {
+  width: 60px; height: 3.5px;
+  background: var(--coral);
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+.hero .subtitle {
+  font-size: 18px;
+  color: var(--ink-2);
+  line-height: 1.55;
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+.hero .meta-row {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-top: 24px;
+}
+.hero .meta-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--coral-tint);
+  color: var(--coral-deep);
+  padding: 8px 14px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.hero .meta-pill.dark { background: var(--teal); color: var(--white); }
+.hero .meta-pill.mint { background: var(--mint); color: var(--green); }
+
+/* SECTION */
+.section {
+  margin-bottom: 80px;
+  scroll-margin-top: 24px;
+}
+.section-header {
+  display: flex; align-items: flex-start; gap: 18px;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.section-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--coral);
+  letter-spacing: -0.04em;
+  flex-shrink: 0;
+}
+.section-title-block { flex: 1; padding-top: 8px; }
+.section-eyebrow {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 8px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+.section-lead {
+  font-size: 16px;
+  color: var(--ink-2);
+  line-height: 1.6;
+  max-width: 760px;
+}
+
+/* ============================================================
+   COMPONENTS
+   ============================================================ */
+
+/* SIGNATURE HIGHLIGHT - coral block under word */
+.hl {
+  background: linear-gradient(to top, var(--coral) 28%, transparent 28%);
+  padding: 0 0.06em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.accent-coral { color: var(--coral); font-family: var(--font-display); font-weight: 700; }
+.accent-teal  { color: var(--teal); font-family: var(--font-display); font-weight: 700; }
+.accent-green { color: var(--green); font-family: var(--font-display); font-weight: 700; }
+.accent-red   { color: var(--red); font-family: var(--font-display); font-weight: 700; }
+.accent-gold  { color: var(--gold); font-family: var(--font-display); font-weight: 700; }
+
+/* SOURCE PILL */
+.source-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--coral); color: var(--white);
+  font-family: var(--font-display); font-weight: 700;
+  font-size: 10px; letter-spacing: 0.04em;
+  padding: 6px 10px; border-radius: var(--r-sm);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+/* KPI ROW */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin: 28px 0;
+}
+.kpi-tile {
+  border-radius: var(--r-lg);
+  padding: 22px 20px;
+  display: flex; flex-direction: column; gap: 10px;
+  min-height: 130px;
+  text-align: center;
+  align-items: center; justify-content: center;
+}
+.kpi-tile.teal { background: var(--teal); color: var(--white); }
+.kpi-tile.coral { background: var(--coral); color: var(--white); }
+.kpi-tile.mint { background: var(--mint); color: var(--teal); }
+.kpi-tile .val {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+.kpi-tile .val small {
+  font-size: 22px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-left: 2px;
+}
+.kpi-tile .lbl {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.92;
+  font-weight: 500;
+  max-width: 200px;
+  line-height: 1.35;
+}
+
+/* CARDS - Inbound canonical */
+.card {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  padding: 22px 26px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--line-soft);
+  transition: box-shadow 0.22s cubic-bezier(.2,.8,.2,1);
+  margin-bottom: 18px;
+}
+.card:hover { box-shadow: var(--shadow-card-hover); }
+.card h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--teal);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+.card h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--teal);
+  margin-bottom: 8px;
+  letter-spacing: -0.005em;
+}
+.card p { color: var(--ink-2); margin-bottom: 12px; font-size: 14.5px; }
+.card p:last-child { margin-bottom: 0; }
+
+/* INSIGHT BULLETS - Inbound signature ➔ */
+ul.insight {
+  list-style: none;
+  padding: 0;
+}
+ul.insight li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--teal);
+}
+ul.insight li::before {
+  content: "➔";
+  position: absolute;
+  left: 0; top: 0;
+  color: var(--teal);
+  font-size: 15px;
+  font-weight: 700;
+}
+ul.insight b, ul.insight strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+ul.insight .pos { color: var(--green); font-family: var(--font-display); font-weight: 700; }
+ul.insight .neg { color: var(--red); font-family: var(--font-display); font-weight: 700; }
+ul.insight .key { color: var(--coral); font-family: var(--font-display); font-weight: 700; }
+
+/* TABLES - Inbound style */
+.data-table-wrap { overflow-x: auto; border-radius: var(--r-md); box-shadow: var(--shadow-card); margin: 20px 0; }
+.data-table {
+  width: 100%; border-collapse: collapse;
+  font-family: var(--font-body); font-size: 13px;
+  background: var(--white);
+}
+.data-table th {
+  background: var(--teal);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 12px 14px;
+  text-transform: uppercase;
+}
+.data-table th:first-child { text-align: left; }
+.data-table td {
+  padding: 11px 14px;
+  border-top: 1px solid var(--line);
+  color: var(--teal);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+}
+.data-table td:first-child { text-align: left; font-weight: 500; }
+.data-table tr:hover { background: rgba(255,123,82,0.04); }
+.data-table .pos-cell { background: var(--green-wash); color: var(--green); font-family: var(--font-display); font-weight: 700; }
+.data-table .neg-cell { background: var(--red-wash); color: var(--red); font-family: var(--font-display); font-weight: 700; }
+.data-table .coral-cell { background: var(--coral-tint); color: var(--coral-deep); font-family: var(--font-display); font-weight: 700; }
+.data-table .num { font-family: var(--font-display); font-weight: 700; }
+
+/* IDEA CARDS - 44 fikir kartı */
+.idea-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  margin: 28px 0;
+}
+.idea-card {
+  position: relative;
+  background: var(--white);
+  border-radius: var(--r-lg);
+  padding: 22px 24px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--line-soft);
+  transition: all 0.22s cubic-bezier(.2,.8,.2,1);
+  overflow: hidden;
+}
+.idea-card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+.idea-card .idea-num {
+  position: absolute;
+  top: 14px; right: 20px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 46px;
+  color: var(--coral);
+  opacity: 0.15;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.idea-card .idea-icon {
+  width: 36px; height: 36px;
+  border-radius: 999px;
+  background: var(--coral);
+  color: var(--white);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+.idea-card h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--teal);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+  padding-right: 40px;
+  line-height: 1.25;
+}
+.idea-card .idea-url {
+  font-family: 'SF Mono', Monaco, Menlo, Consolas, monospace;
+  font-size: 11.5px;
+  color: var(--coral-deep);
+  background: var(--coral-tint);
+  padding: 4px 8px;
+  border-radius: var(--r-sm);
+  display: inline-block;
+  margin-bottom: 14px;
+  word-break: break-all;
+}
+.idea-card .idea-metrics {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 14px;
+}
+.idea-card .metric-badge {
+  background: var(--mint);
+  color: var(--teal);
+  padding: 5px 10px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.idea-card .metric-badge.coral { background: var(--coral-tint); color: var(--coral-deep); }
+.idea-card .metric-badge.teal  { background: var(--teal); color: var(--white); }
+.idea-card .metric-badge.green { background: var(--green-wash); color: var(--green); }
+.idea-card .idea-stars {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--coral);
+  letter-spacing: 0.05em;
+}
+.idea-card .idea-desc {
+  font-size: 13.5px;
+  color: var(--ink-2);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+.idea-card .idea-kw {
+  font-size: 12px;
+  color: var(--ink-3);
+  line-height: 1.55;
+  border-top: 1px dashed var(--line);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+.idea-card .idea-kw strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--teal);
+  display: block;
+  margin-bottom: 4px;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.idea-card .star-pill {
+  position: absolute;
+  bottom: 14px; right: 20px;
+  background: var(--coral);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: var(--r-pill);
+  display: none;
+}
+.idea-card[data-marka="evet"] .star-pill { display: inline-block; }
+.idea-card[data-marka="evet"] {
+  border: 2px solid var(--coral);
+}
+
+/* CHART CONTAINERS */
+.chart-card {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  padding: 24px 24px 28px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--line-soft);
+  margin: 18px 0;
+}
+.chart-card .chart-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--teal);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.chart-card .chart-sub {
+  font-size: 12px;
+  color: var(--ink-3);
+  margin-bottom: 18px;
+}
+.chart-container {
+  position: relative;
+  height: 380px;
+  width: 100%;
+}
+.chart-container.tall { height: 520px; }
+.chart-container.short { height: 280px; }
+
+.chart-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 18px 0;
+}
+
+/* INFO NOTES - color-coded */
+.note {
+  padding: 18px 22px;
+  border-radius: var(--r-md);
+  margin: 18px 0;
+  display: flex; gap: 14px; align-items: flex-start;
+  border-left: 4px solid;
+  background: var(--white);
+  box-shadow: var(--shadow-card);
+}
+.note .note-icon {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+.note .note-body { flex: 1; }
+.note .note-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.note p { font-size: 14px; color: var(--ink-2); line-height: 1.55; }
+.note.info { border-left-color: var(--coral); background: var(--coral-tint); }
+.note.info .note-icon, .note.info .note-title { color: var(--coral-deep); }
+.note.success { border-left-color: var(--green); background: var(--green-wash); }
+.note.success .note-icon, .note.success .note-title { color: var(--green); }
+.note.warn { border-left-color: var(--gold); background: #FFF8E1; }
+.note.warn .note-icon, .note.warn .note-title { color: var(--gold); }
+.note.danger { border-left-color: var(--red); background: var(--red-wash); }
+.note.danger .note-icon, .note.danger .note-title { color: var(--red); }
+
+/* TWO COL GRID */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 20px 0;
+}
+
+/* HIGHLIGHT METRIC ROW */
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+.metric-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 14px 16px;
+  text-align: center;
+}
+.metric-box .v {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  color: var(--coral);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.metric-box .l {
+  font-size: 11px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+  line-height: 1.3;
+}
+
+/* COMPARISON CARDS - markaya iletilen vs yeni */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin: 28px 0;
+}
+.compare-col {
+  background: var(--white);
+  border-radius: var(--r-lg);
+  padding: 26px 28px;
+  box-shadow: var(--shadow-card);
+  border-top: 5px solid;
+}
+.compare-col.iletilen { border-top-color: var(--coral); }
+.compare-col.yeni { border-top-color: var(--teal); }
+.compare-col h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+.compare-col.iletilen h3 { color: var(--coral); }
+.compare-col.yeni h3 { color: var(--teal); }
+.compare-list { list-style: none; padding: 0; }
+.compare-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13.5px;
+  color: var(--ink-2);
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 10px;
+}
+.compare-list li:last-child { border-bottom: none; }
+.compare-list .kw { color: var(--teal); font-weight: 500; flex: 1; }
+.compare-list .hacim {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--coral);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* FOOTER */
+.report-footer {
+  margin-top: 80px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 18px;
+}
+.report-footer .footer-brand {
+  display: flex; align-items: center; gap: 12px;
+}
+.report-footer .o-mark {
+  width: 32px; height: 32px;
+  border: 2.5px solid var(--coral);
+  border-radius: 50%;
+}
+.report-footer .footer-text {
+  font-size: 12px;
+  color: var(--ink-3);
+  line-height: 1.5;
+}
+.report-footer .footer-text strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--teal);
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .container-wrapper { grid-template-columns: 1fr; }
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    transform: translateX(-100%);
+    z-index: 1000;
+    width: 280px;
+    height: 100vh;
+  }
+  .sidebar.active { transform: translateX(0); }
+  .main-content { padding: 70px 32px 60px; }
+  .menu-toggle { display: inline-flex; }
+  .chart-grid-2, .compare-grid, .two-col { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 36px; }
+  .section-title { font-size: 26px; }
+  .section-num { font-size: 48px; }
+}
+@media (max-width: 640px) {
+  .main-content { padding: 64px 18px 50px; }
+  .idea-grid { grid-template-columns: 1fr; }
+  .kpi-row { grid-template-columns: repeat(2, 1fr); }
+  .chart-container { height: 320px; }
+}
+
+/* ============================================================
+   EXCEL VIEWER — Modal + Sheet Tabs
+   ============================================================ */
+.excel-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--mint);
+  color: var(--green);
+  border: 1px solid var(--green);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(.2,.8,.2,1);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.excel-btn:hover {
+  background: var(--green);
+  color: var(--white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(46,125,50,0.25);
+}
+.excel-btn::before {
+  content: '⊞';
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.excel-cta-row {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin: 16px 0 8px;
+  align-items: center;
+}
+.excel-cta-row .excel-btn { margin-left: 0; }
+
+/* Modal */
+.xls-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(16,51,47,0.82);
+  display: none;
+  align-items: center; justify-content: center;
+  z-index: 10000;
+  padding: 24px;
+  backdrop-filter: blur(4px);
+}
+.xls-modal.active { display: flex; }
+.xls-modal-box {
+  background: var(--white);
+  width: 100%;
+  max-width: 1400px;
+  height: 90vh;
+  border-radius: var(--r-lg);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  box-shadow: var(--shadow-pop);
+}
+.xls-modal-header {
+  background: var(--teal);
+  color: var(--white);
+  padding: 16px 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 18px;
+  flex-shrink: 0;
+}
+.xls-modal-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  display: flex; align-items: center; gap: 12px;
+}
+.xls-modal-title .badge-coral {
+  background: var(--coral);
+  color: var(--white);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+}
+.xls-modal-close {
+  background: rgba(255,255,255,0.12);
+  color: var(--white);
+  border: none;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 700;
+  transition: background 0.18s;
+}
+.xls-modal-close:hover { background: var(--coral); }
+
+.xls-tabs {
+  display: flex;
+  overflow-x: auto;
+  background: var(--teal-soft);
+  padding: 0 16px;
+  flex-shrink: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.xls-tabs::-webkit-scrollbar { height: 5px; }
+.xls-tabs::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 3px; }
+
+.xls-tab {
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  border: none;
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  transition: all 0.18s;
+  flex-shrink: 0;
+}
+.xls-tab:hover { color: var(--white); background: rgba(255,255,255,0.05); }
+.xls-tab.active {
+  color: var(--coral);
+  border-bottom-color: var(--coral);
+  background: rgba(255,123,82,0.08);
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.xls-body {
+  flex: 1;
+  overflow: auto;
+  background: var(--off-white);
+  padding: 0;
+}
+.xls-loading, .xls-error {
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--ink-2);
+  font-size: 15px;
+}
+.xls-error {
+  color: var(--red);
+  background: var(--red-wash);
+  margin: 24px;
+  border-radius: var(--r-md);
+  padding: 24px;
+}
+.xls-error strong {
+  font-family: var(--font-display);
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.xls-table-wrap {
+  padding: 0;
+  background: var(--white);
+}
+.xls-rendered-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+.xls-rendered-table thead th,
+.xls-rendered-table tr:first-child td {
+  background: var(--teal);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11.5px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 10px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border: 1px solid var(--teal-soft);
+}
+.xls-rendered-table td {
+  padding: 7px 11px;
+  border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line-soft);
+  color: var(--teal);
+  vertical-align: top;
+  max-width: 380px;
+  word-wrap: break-word;
+}
+.xls-rendered-table tr:nth-child(even) td { background: rgba(232,245,233,0.35); }
+.xls-rendered-table tr:hover td { background: rgba(255,123,82,0.06); }
+
+.xls-modal-footer {
+  background: var(--off-white);
+  border-top: 1px solid var(--line);
+  padding: 12px 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 11.5px;
+  color: var(--ink-3);
+  flex-shrink: 0;
+  flex-wrap: wrap; gap: 12px;
+}
+.xls-modal-footer .sheet-info { font-family: var(--font-display); color: var(--teal); font-weight: 600; }
+.xls-modal-footer .download-link {
+  color: var(--coral);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.xls-modal-footer .download-link:hover { color: var(--coral-deep); text-decoration: underline; }
+
+.xls-file-loader {
+  padding: 36px 32px;
+  text-align: center;
+}
+.xls-file-loader p { color: var(--ink-2); margin-bottom: 16px; font-size: 14px; }
+.xls-file-loader label {
+  display: inline-block;
+  background: var(--coral);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: var(--r-pill);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  transition: background 0.18s;
+}
+.xls-file-loader label:hover { background: var(--coral-deep); }
+.xls-file-loader input[type="file"] { display: none; }
+
+@media (max-width: 768px) {
+  .xls-modal { padding: 0; }
+  .xls-modal-box { height: 100vh; max-width: 100%; border-radius: 0; }
+  .xls-modal-title { font-size: 14px; }
+}
+
+/* PRINT */
+@page { size: A4; margin: 12mm; }
+@media print {
+  body { font-size: 11pt; }
+  .sidebar, .menu-toggle, .back-to-top, .progress-bar { display: none !important; }
+  .container-wrapper { grid-template-columns: 1fr; }
+  .main-content { padding: 0; }
+  .section { break-inside: avoid; }
+  .idea-card, .card, .chart-card { break-inside: avoid; box-shadow: none; border: 1px solid var(--line); }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">☰</button>
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Başa Dön">↑</a>
+
+<!-- EXCEL VIEWER MODAL -->
+<div class="xls-modal" id="xlsModal" role="dialog" aria-modal="true" aria-labelledby="xlsModalTitle">
+  <div class="xls-modal-box">
+    <div class="xls-modal-header">
+      <div class="xls-modal-title" id="xlsModalTitle">
+        <span>📊 Excel: Turkcell Trafik Fırsatları</span>
+        <span class="badge-coral" id="xlsBadge">46 sheet</span>
+      </div>
+      <button class="xls-modal-close" id="xlsModalClose" aria-label="Kapat">×</button>
+    </div>
+    <div class="xls-tabs" id="xlsTabs"></div>
+    <div class="xls-body" id="xlsBody">
+      <div class="xls-loading">Excel dosyası yükleniyor...</div>
+    </div>
+    <div class="xls-modal-footer">
+      <span class="sheet-info" id="xlsSheetInfo">Hazır</span>
+      <a href="TURKCELL_TRAFIK_FIRSATLARI.xlsx" download class="download-link">⬇ Tam Excel'i indir</a>
+    </div>
+  </div>
+</div>
+
+<div class="container-wrapper">
+
+<!-- ============================================================
+     SIDEBAR
+     ============================================================ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <div class="o-mark"></div>
+    <div class="wordmark">inbound</div>
+  </div>
+  <div class="sidebar-tagline">Turkcell · Trafik Fırsatları</div>
+
+  <nav>
+    <div class="sidebar-section-label">Rapor Akışı</div>
+    <ul>
+      <li><a href="#top" class="active"><span class="num">00</span><span>Yönetici Özeti</span></a></li>
+      <li><a href="#hizalama"><span class="num">01</span><span>2026 Planıyla Hizalama</span></a></li>
+      <li><a href="#top-firsatlar"><span class="num">02</span><span>En Büyük Fırsatlar</span></a></li>
+      <li><a href="#a6"><span class="num">03</span><span>A6 - 2026 Plan Perspektifleri</span><span class="new-badge">YENİ</span></a></li>
+    </ul>
+
+    <div class="sidebar-section-label">Cluster Fikirleri</div>
+    <ul>
+      <li><a href="#a1"><span class="num">04</span><span>A1 - Hesaplama Hub</span></a></li>
+      <li><a href="#a2"><span class="num">05</span><span>A2 - Resmi Tatil &amp; Bayram</span></a></li>
+      <li><a href="#a3"><span class="num">06</span><span>A3 - Özel Gün &amp; Mesaj</span></a></li>
+      <li><a href="#a4"><span class="num">07</span><span>A4 - Telekom &amp; Sorgu</span></a></li>
+      <li><a href="#a5"><span class="num">08</span><span>A5 - AI / Siber / Diğer</span></a></li>
+    </ul>
+
+    <div class="sidebar-section-label">Veri &amp; Doğrulama</div>
+    <ul>
+      <li><a href="#rakip"><span class="num">09</span><span>Rakip Pattern Analizi</span></a></li>
+      <li><a href="#dfs"><span class="num">10</span><span>DfS Doğrulama</span></a></li>
+      <li><a href="#karsilastirma"><span class="num">11</span><span>İletilen vs Yeni Fikirler</span></a></li>
+      <li><a href="#sonraki"><span class="num">12</span><span>Sonraki Adımlar</span></a></li>
+    </ul>
+  </nav>
+
+  <div class="sidebar-footer">
+    <strong>Inbound</strong>
+    welcome@inbound.com.tr<br>
+    SEO &amp; Marketing Intelligence<br><br>
+    Mayıs 2026 · v3
+  </div>
+</aside>
+
+<!-- ============================================================
+     MAIN CONTENT
+     ============================================================ -->
+<main class="main-content" id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="breadcrumb">
+      <span class="section">Inbound</span>
+      <span class="sep">|</span>
+      <span class="title">Trafik Fırsatları Raporu · Mayıs 2026</span>
+    </div>
+
+    <h1>Turkcell için <span class="hl">yeni trafik kaynakları</span><br>- Google + AI dönemine hazırlık</h1>
+    <div class="accent-line"></div>
+
+    <p class="subtitle">
+      <strong>60.715</strong> Turkcell-yok rakip-var fırsat <strong>35 evergreen cluster'a</strong> ayrıldı,
+      <strong>150+ kritik anahtar kelime DataForSEO ile doğrulandı</strong>. Sunum görsellerindeki Verizon Coverage Map ve
+      Vodafone UK Data Calculator modelleri Turkcell'in 2026 planına entegre edildi.
+      Markaya daha önce iletilen fikirler <span class="accent-coral">(*)</span> ile işaretlendi.
+    </p>
+
+    <div class="meta-row">
+      <span class="meta-pill dark">Ahrefs Content Gap · 75K KW</span>
+      <span class="meta-pill">DataForSEO · TR Mayıs 2026</span>
+      <span class="meta-pill mint">120M+ adreslenebilir hacim</span>
+      <span class="meta-pill">44 stratejik sayfa fikri</span>
+    </div>
+
+    <div class="excel-cta-row">
+      <a href="#" class="excel-btn" data-xls-sheet="ozet">Excel · Yönetici Özeti</a>
+      <a href="#" class="excel-btn" data-xls-sheet="tum">Excel · Tüm 60K Fırsat</a>
+      <a href="#" class="excel-btn" data-xls-sheet="dfs">Excel · DfS Doğrulama</a>
+    </div>
+
+    <!-- KPI ROW -->
+    <div class="kpi-row" style="margin-top: 38px;">
+      <div class="kpi-tile teal">
+        <div class="val">60.7<small>K</small></div>
+        <div class="lbl">Toplam Fırsat Anahtar Kelime</div>
+      </div>
+      <div class="kpi-tile coral">
+        <div class="val">120<small>M+</small></div>
+        <div class="lbl">Aylık Adreslenebilir Hacim</div>
+      </div>
+      <div class="kpi-tile teal">
+        <div class="val">44</div>
+        <div class="lbl">Stratejik Sayfa Fikri</div>
+      </div>
+      <div class="kpi-tile coral">
+        <div class="val">8</div>
+        <div class="lbl">A6 - 2026 Yeni Perspektif</div>
+      </div>
+      <div class="kpi-tile mint">
+        <div class="val">150<small>+</small></div>
+        <div class="lbl">DfS Doğrulanmış KW</div>
+      </div>
+    </div>
+
+    <!-- SIGNATURE INSIGHTS -->
+    <div class="card" style="margin-top: 36px;">
+      <h3>Üç temel yapısal bulgu</h3>
+      <ul class="insight">
+        <li>Hava durumu kümesi tek başına <b>95M+/ay</b> aylık hacim oluşturuyor - bu, 2026 planındaki <span class="key">44M mass-trafik hedefini</span> tek başına geçer. <span class="pos">(*) markaya iletilmiş</span>
+        </li>
+        <li>Vatan Bilgisayar'ın tek bir <span class="key">/hesap-makinesi</span> sayfası ayda <b>33.991</b> organik trafik alıyor, <b>48 keyword'de</b> sıralanıyor - Turkcell'in karşılığı yok.
+        </li>
+        <li>Vodafone UK <span class="key">/mobile/data-calculator</span> modeli <b>469 keyword'de 56.6K trafik</b> alıyor; tüm kelimeler informational - <span class="key">AI Overview için ideal</span>. Turkcell tarife CR'sini destekleyen birebir uyumlu fikir.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       01. 2026 PLANIYLA HİZALAMA
+       ============================================================ -->
+  <section class="section" id="hizalama">
+    <div class="section-header">
+      <div class="section-num">01</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Strateji</div>
+        <h2 class="section-title">2026 Planıyla <span class="hl">Hizalama</span></h2>
+        <p class="section-lead">
+          Markanın 2026 ana hedefi <strong>+5M click</strong>. Aşağıdaki tablo, plan maddelerini bu rapordaki fikir bölümleriyle eşliyor -
+          her satırda hangi cluster'ın hangi click hedefini karşıladığı net.
+        </p>
+      </div>
+    </div>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:30%">2026 Plan Maddesi</th>
+            <th style="width:18%">Rapor Bölümü</th>
+            <th>Hedef Hacim</th>
+            <th>Click Hedefi</th>
+            <th>Durum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hesaplama sayfalarının oluşturulması</td>
+            <td class="num">A1 + A6.1</td>
+            <td>5.5M</td>
+            <td class="coral-cell">500K+</td>
+            <td class="pos-cell">Veri hazır</td>
+          </tr>
+          <tr>
+            <td>Alternatif mass-trafik LP'leri</td>
+            <td class="num">A6.2 + A2 + A3</td>
+            <td>44M</td>
+            <td class="coral-cell">500K+</td>
+            <td class="pos-cell">Hava durumu lokomotif</td>
+          </tr>
+          <tr>
+            <td>Paket listeleme sayfalarına içerik</td>
+            <td class="num">A6.8</td>
+            <td>Mevcut sayfalar</td>
+            <td>%7-10 artış (250K+)</td>
+            <td class="pos-cell">Brief hazır</td>
+          </tr>
+          <tr>
+            <td>Aylık düzenli blog içerikleri</td>
+            <td class="num">A4 + A5 besler</td>
+            <td>-</td>
+            <td>%5-7 artış (200K+)</td>
+            <td class="pos-cell">Cluster set hazır</td>
+          </tr>
+          <tr>
+            <td>Schema markup uygulaması</td>
+            <td class="num">Her sayfa tipi</td>
+            <td>-</td>
+            <td>%6-10 artış (200K+)</td>
+            <td class="pos-cell">Şablonlar belirlendi</td>
+          </tr>
+          <tr>
+            <td>Persona odaklı paket tarifeleri</td>
+            <td class="num">A6.5</td>
+            <td>Düşük hacim, yüksek CR</td>
+            <td class="coral-cell">50K+</td>
+            <td class="pos-cell">9 persona haritalandı</td>
+          </tr>
+          <tr>
+            <td>Sınırsız mecra bazlı paketler (YouTube/TikTok)</td>
+            <td class="num">A6.4</td>
+            <td>10-15K küme</td>
+            <td>%8 artış (150K+)</td>
+            <td class="pos-cell">Facet planı hazır</td>
+          </tr>
+          <tr>
+            <td>Teknoloji sözlüğü</td>
+            <td class="num">A6.6</td>
+            <td>200K+/ay direkt</td>
+            <td>AI Overview ideal</td>
+            <td class="pos-cell">100+ tanım listesi</td>
+          </tr>
+          <tr>
+            <td>4.5G karşılaştırma "fark" detayı</td>
+            <td class="num">A6.7</td>
+            <td>UX/CR odaklı</td>
+            <td>Pop-up genişletme</td>
+            <td class="pos-cell">10 fark alanı önerildi</td>
+          </tr>
+          <tr>
+            <td>5G Coverage Map (Verizon modeli)</td>
+            <td class="num">A6.3</td>
+            <td>Trend +%1614 quarterly</td>
+            <td>5G launch ile büyüyecek</td>
+            <td class="coral-cell">Yeni fikir</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note info">
+      <div class="note-icon">i</div>
+      <div class="note-body">
+        <div class="note-title">Yaklaşım</div>
+        <p>Bu rapor "ne yapılmalı"dan çok "neyi neden yapmalı, hangi anahtar kelimeleri hedeflemeli" sorusuna odaklanır. Her fikir için <strong>ana sayfa önerisi + URL + DfS doğrulanmış hacim + oynanabilecek varyasyon listesi</strong> verilmiştir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02. EN BÜYÜK FIRSATLAR
+       ============================================================ -->
+  <section class="section" id="top-firsatlar">
+    <div class="section-header">
+      <div class="section-num">02</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Veri</div>
+        <h2 class="section-title">En Büyük <span class="hl">Doğrulanmış Fırsatlar</span></h2>
+        <p class="section-lead">
+          DataForSEO Mayıs 2026 (TR/tr, location_code 2792) ile doğrulanan top 20 anahtar kelime - aylık arama hacmiyle.
+          Coral barlar markaya daha önce iletilmiş fikirleri (\*), teal barlar bu raporda yeni çıkarılanları gösterir.
+        </p>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="source-pill">DataForSEO · Mayıs 2026 · TR/tr</div>
+      <div class="chart-title">Top 20 Anahtar Kelime - Aylık Arama Hacmi</div>
+      <div class="chart-sub">Yıllık ortalama; sezonsal zirve aylarda 2-10× yükseliyor</div>
+      <div class="chart-container tall">
+        <canvas id="chartTopFirsatlar"></canvas>
+      </div>
+    </div>
+
+    <div class="chart-grid-2">
+      <div class="chart-card">
+        <div class="chart-title">Cluster Hacim Payı (Top 12)</div>
+        <div class="chart-sub">35 cluster'dan en büyük 12'si - Ahrefs CSV / aylık toplam</div>
+        <div class="chart-container">
+          <canvas id="chartClusterPay"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Hacim Seviyesi Piramidi</div>
+        <div class="chart-sub">60.715 fırsattan kaçı hangi hacim eşiğinin üstünde</div>
+        <div class="chart-container">
+          <canvas id="chartHacimPiramidi"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03. A6 - 2026 PLAN PERSPEKTİFLERİ (YENİ)
+       ============================================================ -->
+  <section class="section" id="a6">
+    <div class="section-header">
+      <div class="section-num">03</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">YENİ · 2026 Plan</div>
+        <h2 class="section-title">A6 - <span class="hl">2026 Plan Perspektifleri</span></h2>
+        <p class="section-lead">
+          Markaya iletilen plan + sunum görselleri (Verizon, Vodafone UK) + 4.5G karşılaştırma feedback'i bu bölümde 8 yeni fikre dönüştürüldü.
+          Hava durumu (A6.2) markaya daha önce iletilmiş ana mass-trafik LP fikriydi <span class="accent-coral">(*)</span> -
+          burada DfS verisiyle güçlendirildi.
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="a6">Excel · A6 8 fikrin tam kelime listesi</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 IDEA CARDS -->
+    <div class="idea-grid">
+
+      <!-- A6.1 Data Calculator -->
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">01</div>
+        <div class="idea-icon">📊</div>
+        <h4>Veri / Data Kullanım Hesaplayıcı (Vodafone UK Modeli)</h4>
+        <span class="idea-url">/data-hesaplayicim/</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">10-15K + CR</span>
+          <span class="metric-badge">KD: düşük</span>
+          <span class="metric-badge green">AI ideal</span>
+          <span class="idea-stars">★★★</span>
+        </div>
+        <p class="idea-desc">Slider'lı kullanım girişi + kişiselleştirilmiş paket önerisi. Vodafone UK örneğinde 469 KW / 56.6K trafik, tüm informational.</p>
+        <div class="idea-kw">
+          <strong>Hedef Anahtar Kelimeler</strong>
+          ne kadar internet lazım, kaç gb internet yeterli, youtube ne kadar veri tüketir, netflix ne kadar veri, instagram ne kadar veri, 1 saat film kaç gb, 1 gb kaç saat youtube, 1 gb kaç mb (5.4K), kb to gb dönüştürücü <strong>(\*)</strong>, data calculator turkcell
+        </div>
+      </div>
+
+      <!-- A6.2 Hava Durumu MARKAYA İLETİLMİŞ -->
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">02</div>
+        <div class="idea-icon">🌤</div>
+        <h4>Hava Durumu Mega-Hub</h4>
+        <span class="idea-url">/hava-durumu/ + 81 il alt sayfa</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">95M+/ay</span>
+          <span class="metric-badge">KD: 19-39</span>
+          <span class="metric-badge teal">81 il × 4 alt</span>
+          <span class="idea-stars">★★★</span>
+        </div>
+        <p class="idea-desc">Markaya iletilmiş ana mass-trafik LP fikri. MGM API + ICT desteği gerekli. WeatherForecast + Place schema.</p>
+        <div class="idea-kw">
+          <strong>Hedef Anahtar Kelimeler (DfS)</strong>
+          hava durumu (55.6M), yarınki hava durumu (16.6M), istanbul hava durumu (7.5M), ankara (6.1M), izmir (3.4M), 5 günlük (110K), 10 günlük (90.5K), saatlik (49.5K), haftalık (33.1K), yarın hava nasıl olacak (18.1K) + 81 il × ilçeler
+        </div>
+        <span class="star-pill">Markaya İletilmiş</span>
+      </div>
+
+      <!-- A6.3 Coverage Map -->
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">03</div>
+        <div class="idea-icon">📡</div>
+        <h4>5G Kapsama Haritası (Verizon Modeli)</h4>
+        <span class="idea-url">/kapsama-haritasi/</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">+%2500 quarterly</span>
+          <span class="metric-badge">KD: düşük-29</span>
+          <span class="metric-badge teal">Trend lokomotif</span>
+          <span class="idea-stars">★★★</span>
+        </div>
+        <p class="idea-desc">Verizon: 7041 KW / 109K trafik / toplamın %1'i tek sayfada. TR 5G launch ile patlayacak - adres girişi + interaktif harita + 5G FAQ.</p>
+        <div class="idea-kw">
+          <strong>Hedef Anahtar Kelimeler</strong>
+          5g kapsama alanı (480, +%1025 trend), 5g kapsama haritası (170, +%2500 quarterly!), 5g hızı (260, +%1344), 5g nedir (9.9K), turkcell kapsama alanı, kapsama alanı sorgulama, 5g destekleyen telefonlar, 5g hangi illerde
+        </div>
+      </div>
+
+      <!-- A6.4 Sınırsız Mecra -->
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">04</div>
+        <div class="idea-icon">∞</div>
+        <h4>Sınırsız Mecra Paketleri (Facet)</h4>
+        <span class="idea-url">/sinirsiz-paketler/ veya facet</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">10-15K + dolaylı</span>
+          <span class="metric-badge">KD: 29</span>
+          <span class="metric-badge green">%8 artış (150K+)</span>
+          <span class="idea-stars">★★★</span>
+        </div>
+        <p class="idea-desc">Plan listeleme sayfalarında "sınırsız [mecra]" facet'leri açılır. Her facet bir landing page'e çıkar.</p>
+        <div class="idea-kw">
+          <strong>Hedef Anahtar Kelimeler</strong>
+          sınırsız internet paketi (3.6K), sınırsız sosyal medya paketi (1.6K), sınırsız youtube paketi (590), sınırsız tiktok paketi (70, +%250 trend!), sınırsız whatsapp paketi (90), sınırsız instagram paketi (70), sınırsız netflix, sınırsız spotify, sınırsız bip
+        </div>
+      </div>
+
+      <!-- A6.5 Persona -->
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">05</div>
+        <div class="idea-icon">👥</div>
+        <h4>Persona Odaklı Tarife Sayfaları</h4>
+        <span class="idea-url">/tarife-personalari/</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">3-5K küme + CR</span>
+          <span class="metric-badge">KD: 1-56</span>
+          <span class="metric-badge green">50K+ click hedef</span>
+          <span class="idea-stars">★★★</span>
+        </div>
+        <p class="idea-desc">9 persona: öğrenci, asker, emekli, KOBİ, engelli, aile/çift hat, gençlik, expat, oyuncu. Her persona için tipik kullanım + tarife öneri + FAQ.</p>
+        <div class="idea-kw">
+          <strong>Hedef Anahtar Kelimeler</strong>
+          öğrenci tarifeleri (320, KD 43), öğrenci tarifesi, asker tarifesi, emekli tarifesi (140, KD 1!), kobi tarifesi, işletme paketi, engelli tarifesi, aile paketi, ikinci hat tarifesi, gençler için tarife, oyuncu tarifesi, expat tarife
+        </div>
+      </div>
+
+      <!-- A6.6 Teknoloji Sözlüğü -->
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">06</div>
+        <div class="idea-icon">📖</div>
+        <h4>Teknoloji Sözlüğü Hub</h4>
+        <span class="idea-url">/teknoloji-sozlugu/</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">200K+/ay direkt</span>
+          <span class="metric-badge">KD: 2-36</span>
+          <span class="metric-badge green">AI ideal</span>
+          <span class="idea-stars">★★★</span>
+        </div>
+        <p class="idea-desc">100+ teknik terim "nedir" sayfası. Schema: DefinedTerm + FAQPage. <strong>Muud nedir / Muud Premium TT'ye gidiyor</strong> (15K+11K) - Turkcell kendi açıklaması yok!</p>
+        <div class="idea-kw">
+          <strong>Hedef Anahtar Kelimeler</strong>
+          gsm nedir (14.8K), 5g nedir (9.9K), ram nedir (9.9K, KD 5), esim nedir (6.6K, KD 19), ip adresi nedir (6.6K), dns nedir (5.4K), router nedir (5.4K), fiber internet nedir (1.9K, KD 2!), modem nedir, wifi nedir, threads nedir (22K), podcast nedir (21K), muud nedir (11K), muud premium nedir (15K), nfc nedir (11K)
+        </div>
+      </div>
+
+      <!-- A6.7 Tarife Fark -->
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">07</div>
+        <div class="idea-icon">⚖</div>
+        <h4>Tarife Karşılaştırma "Fark" Detayı</h4>
+        <span class="idea-url">/paket-ve-tarifeler/4-5-g-hizinda pop-up</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">UX/CR odaklı</span>
+          <span class="metric-badge">Direkt aramayok</span>
+          <span class="metric-badge teal">Pop-up genişletme</span>
+          <span class="idea-stars">★★</span>
+        </div>
+        <p class="idea-desc">Mevcut karşılaştırma pop-up'ında sadece görsel var. "Fark" alanı detaylandırılmalı: GB, dakika, hotspot, 5G, roaming, dijital servisler.</p>
+        <div class="idea-kw">
+          <strong>Detaylandırılacak Fark Alanları</strong>
+          Veri (GB+sınırlandırma+yenileme), Konuşma (dakika her yöne+yurtdışı), SMS (adet+her yöne), Hotspot (izin+limit+kısıt), 5G (destek+hız sınırı), Roaming (ülke listesi+ek paket), Dijital servisler (BiP/fizy/TV+/lifebox), Cihaz desteği (eSIM uyumlu), Sözleşme (taahhüt+cayma), Avantajlar (genç indirim+mağaza puanı)
+        </div>
+        <span class="star-pill">Konuşulmuş</span>
+      </div>
+
+      <!-- A6.8 Paket Listeleme İçerik -->
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">08</div>
+        <div class="idea-icon">📝</div>
+        <h4>Paket Listeleme Kategori İçerikleri</h4>
+        <span class="idea-url">Mevcut /paket-ve-tarifeler/* sayfalarına içerik</span>
+        <div class="idea-metrics">
+          <span class="metric-badge coral">%7-10 artış</span>
+          <span class="metric-badge">Plan hedefi</span>
+          <span class="metric-badge green">250K+ click</span>
+          <span class="idea-stars">★★★</span>
+        </div>
+        <p class="idea-desc">Her listing sayfasının üstüne 300-500 kelime kategori içeriği: tanım + karşılaştırma tablosu + 5-10 FAQ + internal link + schema (BreadcrumbList, FAQPage, ItemList).</p>
+        <div class="idea-kw">
+          <strong>Önerilen Sayfalar &amp; Başlıklar</strong>
+          /paket-ve-tarifeler/ "Turkcell Tarifeleri 2026", /4-5-g-hizinda "4.5G ve 5G Paketleri: Hız, Karşılaştırma", /superonline-fiber-internet/ "Fiber İnternet Paketleri", /genc-tarifeleri "Genç Tarifeler 2026", /aile-paketleri "Aile Paketi Avantajları"
+        </div>
+        <span class="star-pill">Konuşulmuş</span>
+      </div>
+
+    </div>
+
+    <div class="note success">
+      <div class="note-icon">✓</div>
+      <div class="note-body">
+        <div class="note-title">A6 Bölümünün Stratejik Değeri</div>
+        <p>Bu 8 fikir, 2026 planının "alternatif mass trafik LP'ler" (44M hacim hedefi) ve "hesaplama sayfaları" (5.5M hedef) maddelerini doğrudan karşılıyor. <strong>Hava durumu tek başına 95M+/ay</strong> hacim üretiyor - plan hedefini tek fikirle aşıyor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04. A1 - HESAPLAMA HUB
+       ============================================================ -->
+  <section class="section" id="a1">
+    <div class="section-header">
+      <div class="section-num">04</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Cluster · Hesaplama</div>
+        <h2 class="section-title">A1 - <span class="hl">Hesaplama Araçları Hub</span></h2>
+        <p class="section-lead">
+          Vatan Bilgisayar /hesap-makinesi modelinin (33.991 trafik / 48 KW) Turkcell versiyonu. 16 calculator fikri,
+          markaya iletilmiş 7 fikir + 9 yeni fikir. <strong>Mevcut yüzde/yaş hesaplama sayfaları genişletilebilir.</strong>
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="a1">Excel · A1 16 fikir + kelime listesi</a>
+          <a href="#" class="excel-btn" data-xls-sheet="hesaplama">Excel · Hesaplama cluster (top 300 KW)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric-box"><div class="v">2.74M</div><div class="l">Hesap Makinesi Aylık</div></div>
+      <div class="metric-box"><div class="v">1.22M</div><div class="l">Kredi Hesaplama</div></div>
+      <div class="metric-box"><div class="v">673K</div><div class="l">Yüzde (Mevcut)</div></div>
+      <div class="metric-box"><div class="v">368K</div><div class="l">Asgari Ücret 2026</div></div>
+      <div class="metric-box"><div class="v">301K</div><div class="l">Yaş (Mevcut)</div></div>
+      <div class="metric-box"><div class="v">201K</div><div class="l">KDV / Kıdem / Burç</div></div>
+    </div>
+
+    <div class="idea-grid">
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">01</div>
+        <div class="idea-icon">🧮</div>
+        <h4>Genel Hesap Makinesi Hub</h4>
+        <span class="idea-url">/hesaplama-araclari/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">2.74M/ay</span><span class="metric-badge">KD: düşük</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Vatan modeli; basit + bilimsel + fonksiyonlu modlar.</p>
+        <div class="idea-kw"><strong>KW</strong>hesap makinesi (2.17M), bilimsel hesap makinesi (10K), casio hesap makinesi (6.9K), fonksiyonlu hesap makinesi (1.5K), hesap makinesi fiyatları (1.1K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">02</div>
+        <div class="idea-icon">%</div>
+        <h4>Yüzde Hesaplama - MEVCUT, genişlet</h4>
+        <span class="idea-url">/yuzde-hesaplama (mevcut)</span>
+        <div class="idea-metrics"><span class="metric-badge coral">673K/ay</span><span class="metric-badge">KD: 12</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Mevcut sayfayı senaryo bazlı genişlet: indirim, KDV, maaş zammı.</p>
+        <div class="idea-kw"><strong>KW</strong>yüzde artış/azalış, yüzde indirim, yüzde değişim, yüzde fark, kdv yüzdesi, kar yüzdesi, indirim hesaplama <strong>(*) 49.5K</strong></div>
+        <span class="star-pill">Markaya İletilmiş</span>
+      </div>
+
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">03</div>
+        <div class="idea-icon">🎂</div>
+        <h4>Yaş Hesaplama - MEVCUT, genişlet</h4>
+        <span class="idea-url">/yas-hesaplama (mevcut)</span>
+        <div class="idea-metrics"><span class="metric-badge coral">301K/ay</span><span class="metric-badge">KD: 9</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Mevcut sayfa; kedi/köpek yaşı + iki tarih arası gün widget ekle.</p>
+        <div class="idea-kw"><strong>KW</strong>kedi yaşı (12K), köpek yaşı, iki tarih arası gün (22.2K), doğum tarihinden yaş (8.1K), bebek yaş, kaç yaşındayım</div>
+        <span class="star-pill">Markaya İletilmiş</span>
+      </div>
+
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">04</div>
+        <div class="idea-icon">📅</div>
+        <h4>Kaç Gün Kaldı Hesaplama</h4>
+        <span class="idea-url">/kac-gun-kaldi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">33K + küme 1.4M</span><span class="metric-badge">KD: 7</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Tek hub + dinamik geri sayım. Bayramlar/tatiller dahil.</p>
+        <div class="idea-kw"><strong>KW</strong>kaç gün kaldı, bayrama kaç gün kaldı (2.6K), kurban bayramına (3.2K+), ramazan'a (13K), iki tarih arası gün (22.2K)</div>
+        <span class="star-pill">Markaya İletilmiş</span>
+      </div>
+
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">05</div>
+        <div class="idea-icon">💵</div>
+        <h4>Brütten Nete Maaş Hesaplama</h4>
+        <span class="idea-url">/brutten-nete-maas-hesaplama/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">8.1K + küme 491K</span><span class="metric-badge">KD: 30</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Vodafone modeli; Asgari Ücret 2026 (368K, +%210K trend!) canlı tablo bileşeniyle.</p>
+        <div class="idea-kw"><strong>KW</strong>brütten nete maaş (27K), brüt maaş (25K), netten brüte (20K), netten brüt (15K), net maaş (14K), brüt net (8.6K), asgari ücret 2026 (368K!)</div>
+        <span class="star-pill">Markaya İletilmiş</span>
+      </div>
+
+      <div class="idea-card" data-marka="evet">
+        <div class="idea-num">06</div>
+        <div class="idea-icon">📊</div>
+        <h4>KDV Hesaplama</h4>
+        <span class="idea-url">/kdv-hesaplama/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">201K/ay</span><span class="metric-badge">KD: 19</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">İşletme/freelancer kitle. Paycell köprüsü.</p>
+        <div class="idea-kw"><strong>KW</strong>kdv hesaplama, kdv dahil/hariç, kdv oranları 2026, %20/10/8/1 kdv, tevkifat, ötv nedir (8.2K)</div>
+        <span class="star-pill">Markaya İletilmiş</span>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">07</div>
+        <div class="idea-icon">⚖</div>
+        <h4>Kıdem ve İhbar Tazminatı</h4>
+        <span class="idea-url">/kidem-ihbar-tazminati/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">201K + 27.1K</span><span class="metric-badge">KD: 25-27</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Tek sayfada çift araç. HR/iş hayatı kitle.</p>
+        <div class="idea-kw"><strong>KW</strong>kıdem tazminatı, kıdem tazminatı tavanı 2026, ihbar tazminatı, ihbar süresi, iş sözleşmesi fesih, kıdem ihbar farkı</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">08</div>
+        <div class="idea-icon">🏖</div>
+        <h4>Çalışan Hakları Mini-Hub</h4>
+        <span class="idea-url">/calisan-haklari-hesaplayicilari/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">200K+ küme</span><span class="metric-badge">KD: 4-28</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Yıllık izin, fazla mesai, SGK, emeklilik yaşı tek hub'tan dallar.</p>
+        <div class="idea-kw"><strong>KW</strong>yıllık izin hesaplama (9.9K, <span class="accent-green">KD 4</span>), fazla mesai (9.9K), gece zammı, sgk işe giriş (135K), sgk hizmet dökümü (49.5K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">09</div>
+        <div class="idea-icon">🔮</div>
+        <h4>Yükselen Burç Hesaplama</h4>
+        <span class="idea-url">/yukselen-burc-hesaplama/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">201K/ay</span><span class="metric-badge">KD: 10</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Doğum tarihi + saat girişli widget. Eğlence niş, mega hacim.</p>
+        <div class="idea-kw"><strong>KW</strong>yükselen burç hesaplama, burç hesaplama, ay/güneş burcu, çin burcu, doğum haritası, kahve falı (18.1K, KD 12), tarot falı, uyumlu burçlar</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">10</div>
+        <div class="idea-icon">🩺</div>
+        <h4>Sağlık Hesaplayıcıları Mini-Hub</h4>
+        <span class="idea-url">/saglik-hesaplayicilari/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">100K+ küme</span><span class="metric-badge">KD: 7-12</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">BMI, kalori, hamilelik, ovulasyon, regl. Kadın+sağlık kitle.</p>
+        <div class="idea-kw"><strong>KW</strong>bmi hesaplama (8.1K), kalori (74K), hamilelik haftası (2.4K, KD 8), ovulasyon (6.6K, KD 7), regl hesaplama (18.1K), tahmini doğum tarihi</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">11</div>
+        <div class="idea-icon">✍</div>
+        <h4>Yazma Araçları Mini-Hub</h4>
+        <span class="idea-url">/yazma-araclari/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">80K+ küme</span><span class="metric-badge">KD: 3-12</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">EN DÜŞÜK KD! Sosyal medya+öğrenci kitle.</p>
+        <div class="idea-kw"><strong>KW</strong>karakter sayacı (14.8K, <span class="accent-green">KD 3</span>), kelime sayacı (18.1K, KD 12), büyük-küçük harf çevirici, et işareti @ (72K), noktalama işaretleri (40.5K, KD 4), şifre oluşturucu, qr kod</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">12</div>
+        <div class="idea-icon">📚</div>
+        <h4>Dil ve Sözlük Araçları</h4>
+        <span class="idea-url">/sozluk/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">500K+ küme</span><span class="metric-badge">KD: 2-24</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Eğitim cluster düşük KD. BTK Akademi entegrasyonu mantıklı.</p>
+        <div class="idea-kw"><strong>KW</strong>noktalama işaretleri (40.5K, KD 4), iyelik eki (14.8K, KD 5), tdk sözlük (368K), yazım kılavuzu, isim anlamı (6.6K, KD 3), eş anlamlı, atasözleri</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">13</div>
+        <div class="idea-icon">📐</div>
+        <h4>Birim Çevirici Mini-Hub</h4>
+        <span class="idea-url">/birim-cevirici/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">250K+ küme</span><span class="metric-badge">KD: 0-32</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">İnç-cm, kg-libre, GB-MB (telekom-özel!), döviz, sıcaklık.</p>
+        <div class="idea-kw"><strong>KW</strong>55 inç kaç cm (21K), 65 inç kaç cm (17K), 50 inç kaç ekran (13K), iphone 11 kaç cm (5K), tv inç hesaplama, döviz çevirici (74K), 1 gb kaç mb (5.4K), <strong>kb to gb dönüştürücü (\*)</strong></div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">14</div>
+        <div class="idea-icon">⏱</div>
+        <h4>Zaman Araçları Mini-Hub</h4>
+        <span class="idea-url">/zaman-araclari/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">200K+ küme</span><span class="metric-badge">KD: 12-37</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Bugün/saat farkı/geri sayım widget'ları.</p>
+        <div class="idea-kw"><strong>KW</strong>bugün ayın kaçı (90.5K), saat kaç türkiye (2.9K), abd saat farkı, hicri takvim, yarın hava (18.1K), kurban'a kaç gün (3.2K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">15</div>
+        <div class="idea-icon">💳</div>
+        <h4>Kredi/Taksit + Telekom-özel</h4>
+        <span class="idea-url">/kredi-hesaplama/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">1.22M/ay (ana)</span><span class="metric-badge">KD: 45</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Ana zor, ama niş alt sayfalar açık: cayma bedeli, vade farkı, YouTube gelir.</p>
+        <div class="idea-kw"><strong>KW</strong>cayma bedeli (3K, <span class="accent-green">KD 0</span> · turk.net 1.427 trafik · TELEKOM-ÖZEL), vade farkı (2.4K), youtube gelir (2.1K), iskonto, kira artış oranı (6.6K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">16</div>
+        <div class="idea-icon">🏛</div>
+        <h4>Vergi Hesaplama Hub</h4>
+        <span class="idea-url">/vergi-hesaplama/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">250K+ küme</span><span class="metric-badge">KD: 0-42</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">KDV/MTV/ÖTV/gelir vergisi/damga. KOBİ blog.</p>
+        <div class="idea-kw"><strong>KW</strong>kdv (201K), gelir vergisi dilimleri 2026, stopaj, mtv sorgulama (22.2K), ötv hesaplama, vergi mükellefiyet, vergi levhası</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05. A2 - RESMİ TATİL & BAYRAM
+       ============================================================ -->
+  <section class="section" id="a2">
+    <div class="section-header">
+      <div class="section-num">05</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Cluster · Tatil &amp; Bayram</div>
+        <h2 class="section-title">A2 - <span class="hl">Resmi Tatil &amp; Bayram Hub</span></h2>
+        <p class="section-lead">
+          Vodafone /resmi-tatiller modeli 30.896 trafik / 579 KW alıyor. Türkiye'nin yıllık spike trafiği - Kurban Bayramı Mayıs'ta 6M,
+          29 Ekim Ekim'de 5M, Anneler Günü Mayıs'ta 5M.
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="a2">Excel · A2 7 fikir + kelime listesi</a>
+          <a href="#" class="excel-btn" data-xls-sheet="tatil">Excel · Tatil/Bayram cluster (top 300 KW)</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="source-pill">DataForSEO · Aylık Hacim Dağılımı</div>
+      <div class="chart-title">Yıllık Spike Trendi - Kurban Bayramı + Anneler Günü + 29 Ekim</div>
+      <div class="chart-sub">12 aylık DfS verisi · spike ayları bayramların çevresinde yoğunlaşıyor</div>
+      <div class="chart-container">
+        <canvas id="chartBayramSpike"></canvas>
+      </div>
+    </div>
+
+    <div class="idea-grid">
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">01</div>
+        <div class="idea-icon">📋</div>
+        <h4>Resmi Tatiller Ana Hub</h4>
+        <span class="idea-url">/resmi-tatiller/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">22.2K +%8303 trend</span><span class="metric-badge">KD: 3</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Vodafone modeli; yıllık güncellenen takvim + alt sayfalarda her tatil detayı.</p>
+        <div class="idea-kw"><strong>KW</strong>resmi tatiller 2026, resmi tatil günleri (6.6K, KD 8), 2026 15 tatil ne zaman (14K), 9 gün tatil, sömestr (11K), yaz tatili 2026 (11K), kasım tatili 2025 (16K), bugün tatil mi (2K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">02</div>
+        <div class="idea-icon">🌙</div>
+        <h4>Kurban Bayramı 2026</h4>
+        <span class="idea-url">/kurban-bayrami-2026/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">1.22M/ay (Mayıs 6M!)</span><span class="metric-badge">KD: 11</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Vodafone 1. sırada her varyantta. Hub + dinamik geri sayım + alt sayfalar.</p>
+        <div class="idea-kw"><strong>KW</strong>kurban bayramı ne zaman, 2025 kurban bayramı (77K), kurba bayram 2025 (41K), kurban bayramı hangi gün, arefe günü tatil mi (5.8K+2.5K), arefe ne zaman (5.4K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">03</div>
+        <div class="idea-icon">☪</div>
+        <h4>Ramazan 2026</h4>
+        <span class="idea-url">/ramazan-2026/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">18K + iftar 1M (Mart)</span><span class="metric-badge">KD: 0</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Şubat-Nisan spike. İl bazlı iftar/imsak/namaz vakitleri.</p>
+        <div class="idea-kw"><strong>KW</strong>ramazan ne zaman başlıyor 2026, 2025 ramazan'a kaç gün (13K), iftar vakti il bazlı (165K), imsak vakti il bazlı (823K), namaz vakitleri (13.6M)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">04</div>
+        <div class="idea-icon">🕌</div>
+        <h4>Dini Günler &amp; Kandiller</h4>
+        <span class="idea-url">/dini-gunler-kandiller/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">~50K küme</span><span class="metric-badge">KD: düşük</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Mevlit, Regaip, Berat, Miraç, Kadir Gecesi.</p>
+        <div class="idea-kw"><strong>KW</strong>mevlit kandili ne zaman, berat kandili, kadir gecesi, regaip kandili, kandil günleri 2026, kandil mesajları, kandil duaları</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">05</div>
+        <div class="idea-icon">🇹🇷</div>
+        <h4>29 Ekim Cumhuriyet Bayramı</h4>
+        <span class="idea-url">/29-ekim-cumhuriyet-bayrami/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">450K (Ekim 5M!)</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Ekim ayında 5M arama; mesajlar/şiirler ek sayfalar.</p>
+        <div class="idea-kw"><strong>KW</strong>29 ekim cumhuriyet bayramı, 29 ekim 1923, 29 ekim mesajları (880, Ekim 12K), 29 ekim sözleri, 29 ekim hangi gün (3.6K), 29 ekim tatil mi (10K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">06</div>
+        <div class="idea-icon">⭐</div>
+        <h4>Diğer Milli Bayramlar</h4>
+        <span class="idea-url">/milli-bayramlar/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">1M+ spike ayı</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">23 Nisan, 19 Mayıs, 30 Ağustos, 18 Mart, 10 Kasım, 1 Mayıs.</p>
+        <div class="idea-kw"><strong>KW</strong>23 nisan ulusal egemenlik, 19 mayıs atatürk'ü anma, 30 ağustos zafer bayramı, 18 mart resmi tatil mi (6.8K), 10 kasım anma, 1 mayıs emek</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">07</div>
+        <div class="idea-icon">🎊</div>
+        <h4>Yılbaşı + Black Friday</h4>
+        <span class="idea-url">/yilbasi-2026/, /black-friday/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">31K + 13K + spike</span><span class="metric-badge">KD: 0-11</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Aralık başı + Kasım sonu spike. Hediye fikirleri Turkcell mağaza köprü.</p>
+        <div class="idea-kw"><strong>KW</strong>yılbaşı ne zaman, 31 aralık tatil mi (13K, KD 0), yılbaşı hangi güne (1.7K), yılbaşı filmleri (4.4K), yılbaşı mesajları/hediyesi, black friday ne zaman (31K), kara cuma (13K)</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06. A3 - ÖZEL GÜN & MESAJ
+       ============================================================ -->
+  <section class="section" id="a3">
+    <div class="section-header">
+      <div class="section-num">06</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Cluster · Özel Gün</div>
+        <h2 class="section-title">A3 - <span class="hl">Özel Gün + Mesaj/Söz/Kart</span></h2>
+        <p class="section-lead">
+          Anneler Günü Mayıs'ta 5M, Babalar Günü Haziran'da 4M, Sevgililer Günü Şubat'ta 368K arama.
+          Günaydın mesajları (135K, KD 4!) ve anlamlı sözler (110K, KD 4!) yıl boyu evergreen - EN DÜŞÜK KD.
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="a3">Excel · A3 9 fikir + kelime listesi</a>
+          <a href="#" class="excel-btn" data-xls-sheet="mesaj">Excel · Mesaj/Söz cluster</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="source-pill">DataForSEO · Yıl Boyu vs Sezonsal</div>
+      <div class="chart-title">Mesaj/Söz Kategorileri - Aylık Ortalama vs Spike Ayı</div>
+      <div class="chart-sub">Düşük KD + yüksek hacim = hızlı kazanım fırsatı</div>
+      <div class="chart-container">
+        <canvas id="chartMesajKD"></canvas>
+      </div>
+    </div>
+
+    <div class="idea-grid">
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">01</div>
+        <div class="idea-icon">💐</div>
+        <h4>Anneler Günü 2026</h4>
+        <span class="idea-url">/anneler-gunu-2026/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">673K (Mayıs 5M!)</span><span class="metric-badge">KD: 8</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Mayıs ayında 5M; hub + mesaj galerisi + hediye fikirleri.</p>
+        <div class="idea-kw"><strong>KW</strong>anneler günü ne zaman, anneler günü mesajları (74K, Mayıs 1M), anneler günü mesajı (92K), anneler günü sözleri (7.5K), kayınvalideye anneler günü (2.4K), anne hediyesi</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">02</div>
+        <div class="idea-icon">👔</div>
+        <h4>Babalar Günü 2026</h4>
+        <span class="idea-url">/babalar-gunu-2026/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">450K (Haziran 4M!)</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Haziran ayında 4M. Hub + mesaj galerisi.</p>
+        <div class="idea-kw"><strong>KW</strong>babalar günü ne zaman, babalar günü mesajları (4.3K), babalar günü sözleri (15K), duygusal babalar günü (2.4K), eşe babalar günü (2K), baba hediyesi</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">03</div>
+        <div class="idea-icon">💕</div>
+        <h4>Sevgililer Günü 14 Şubat</h4>
+        <span class="idea-url">/sevgililer-gunu/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">33K (Şubat 368K!)</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Şubat 368K spike.</p>
+        <div class="idea-kw"><strong>KW</strong>14 şubat ne zaman, sevgililer günü mesajları, sevgililer günü sözleri, sevgiliye şiir (6.6K), aşk şiirleri, romantik mesajlar, sevgilime mesaj</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">04</div>
+        <div class="idea-icon">🍎</div>
+        <h4>Öğretmenler Günü 24 Kasım</h4>
+        <span class="idea-url">/ogretmenler-gunu/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">5.6K (Kasım spike)</span><span class="metric-badge">KD: 1!</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Kasım spike, KD çok düşük.</p>
+        <div class="idea-kw"><strong>KW</strong>öğretmenler günü güzel sözler (5.6K, KD 1), unutulmaz öğretmen sözleri (6.6K, KD 0), öğretmenler günü notu (2.4K), öğretmenler günü için yazı (1.9K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">05</div>
+        <div class="idea-icon">🌸</div>
+        <h4>8 Mart Kadınlar Günü</h4>
+        <span class="idea-url">/8-mart-kadinlar-gunu/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">~100K+ (Mart)</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Mart spike.</p>
+        <div class="idea-kw"><strong>KW</strong>8 mart ne zaman, kadınlar günü hangi gün, 8 mart kadınlar günü, dünya kadınlar günü, kadınlar günü sözleri, kadınlar günü hediyesi</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">06</div>
+        <div class="idea-icon">🎈</div>
+        <h4>23 Nisan Çocuk Bayramı</h4>
+        <span class="idea-url">/23-nisan-cocuk-bayrami/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">~200K+ (Nisan)</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Nisan spike.</p>
+        <div class="idea-kw"><strong>KW</strong>23 nisan ne zaman, 23 nisan mesajları, 23 nisan şiirleri, ulusal egemenlik, çocuk bayramı mesajları, 23 nisan hediyesi</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">07</div>
+        <div class="idea-icon">🎂</div>
+        <h4>Doğum Günü Mega-Hub</h4>
+        <span class="idea-url">/dogum-gunu-mesajlari/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">201K/ay yıl boyu</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Yıl boyu sabit hacim. BiP/mesajlaşma servisleriyle natürel köprü.</p>
+        <div class="idea-kw"><strong>KW</strong>doğum günü mesajları (201K), doğum günü hediyesi (26K), eşe/anneye/babaya/arkadaşa/sevgiliye doğum günü mesajı, komik/duygusal mesajlar, iyiki doğdun, doğum günü hesaplama (8.1K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">08</div>
+        <div class="idea-icon">☀</div>
+        <h4>Günlük Mesaj Galerileri</h4>
+        <span class="idea-url">/gunluk-mesajlar/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">450K+ küme</span><span class="metric-badge green">KD: 4!</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">EN DÜŞÜK KD! 135K+40K+165K+110K = 450K+/ay; sosyal medya paylaşım kitlesi.</p>
+        <div class="idea-kw"><strong>KW</strong>günaydın mesajları (135K, <span class="accent-green">KD 4</span>), iyi geceler mesajları (40.5K), güzel sözler (165K, KD 11), anlamlı sözler (110K, <span class="accent-green">KD 4</span>), duygusal sözler, taziye mesajları, başsağlığı, şifa mesajları</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">09</div>
+        <div class="idea-icon">🎁</div>
+        <h4>Bayram Mesajları Mega-Hub</h4>
+        <span class="idea-url">/bayram-mesajlari/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">14.8K (Mart 110K!)</span><span class="metric-badge">KD: -</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Ramazan bayramı mesajları 74K (Mart 823K!). Spike aylar Mart/Ekim/Aralık.</p>
+        <div class="idea-kw"><strong>KW</strong>bayram mesajları, ramazan bayramı mesajları (74K, Mart 823K!), kurban bayramı mesajları, bayram için güzel sözler, kandil mesajları, yeni yıl mesajları, yılbaşı mesajları, 29 ekim mesajları (Ekim 12K)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       07. A4 - TELEKOM & SORGU
+       ============================================================ -->
+  <section class="section" id="a4">
+    <div class="section-header">
+      <div class="section-num">07</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Cluster · Telekom-Özel</div>
+        <h2 class="section-title">A4 - <span class="hl">Telekom Yardım &amp; Sorgu</span></h2>
+        <p class="section-lead">
+          Turkcell'in en doğal alanı - Vodafone ve turk.net'in dominant olduğu cluster.
+          IMEI Sorgulama (550K), HGS bakiye (110K), SGK işe giriş (135K), Plaka sorgu (74K, KD 4!) - markaya iletilmiş + yeni eklemeler.
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="a4">Excel · A4 6 fikir + kelime listesi</a>
+          <a href="#" class="excel-btn" data-xls-sheet="edevlet">Excel · E-Devlet/Sorgu cluster</a>
+          <a href="#" class="excel-btn" data-xls-sheet="telefon_ayar">Excel · Telefon Ayar/Sorun cluster</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="idea-grid">
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">01</div>
+        <div class="idea-icon">📱</div>
+        <h4>Mobil Yardım Hub</h4>
+        <span class="idea-url">/mobil-yardim/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">200K+ küme</span><span class="metric-badge">KD: 0-30</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">30+ how-to sayfa. Vodafone/turk.net dominant, Turkcell brand güveni daha yüksek.</p>
+        <div class="idea-kw"><strong>KW</strong>nfc nasıl açılır (12K), nfc nedir (11K), konum nasıl atılır (10K), kendi numaramı (3.6K), <strong>güvenli arama kapatma (\*) 20K</strong>, eSIM nedir (6.6K), 5G nedir (9.9K), mobil imza (10K), <strong>IMEI sorgulama (\*) 550K!</strong>, cayma bedeli (3K), <strong>gizli numara kapatma (\*) 27.1K</strong>, gizli numara nasıl aranır (6.6K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">02</div>
+        <div class="idea-icon">📡</div>
+        <h4>Superonline / İnternet Yardım Hub</h4>
+        <span class="idea-url">/superonline-yardim/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">1M+ küme</span><span class="metric-badge">KD: 0-34</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Superonline ürün otoritesi. Modem markaları için alt sayfalar.</p>
+        <div class="idea-kw"><strong>KW</strong>192.168.1.1 (106K), modem arayüzü, wifi şifresi değiştirme (18.1K), internet hız testi (1M, KD 34), DNS nedir (5.4K), DNS ayarlama, VPN nedir/nasıl kullanılır (3.5K+3.4K), wifi sinyal güçlendirme</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">03</div>
+        <div class="idea-icon">🔍</div>
+        <h4>Sorgulama Rehberi Hub</h4>
+        <span class="idea-url">/sorgulama-rehberi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">300K+ küme</span><span class="metric-badge">KD: 3-40</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Turkcell brand güveni = bu cluster'ın doğal sahibi.</p>
+        <div class="idea-kw"><strong>KW</strong>IBAN sorgulama (33.1K), HGS bakiye sorgulama (110K), MTV sorgulama (22.2K), plaka sorgu (74K, <span class="accent-green">KD 4!</span>), trafik cezası, posta kodu sorgulama (14.8K), pasaport ücreti 2026 (18.1K, KD 3), yeşil pasaport ücreti (27.1K, KD 3), bordo pasaport (12.1K), alan kodları</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">04</div>
+        <div class="idea-icon">💼</div>
+        <h4>SGK Rehberi Hub</h4>
+        <span class="idea-url">/sgk-rehberi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">200K+ küme</span><span class="metric-badge">KD: 20-63</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">HR/işveren kitle; e-Devlet bridge.</p>
+        <div class="idea-kw"><strong>KW</strong>sgk işe giriş (135K, KD 20), sgk işe giriş bildirgesi (11K), sgk hizmet dökümü (49.5K, KD 28), sgk başlangıç tarihi, 4A 4B 4C farkı, emekli sandığı, bağkur sorgulama, emeklilik yaşı (3.6K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">05</div>
+        <div class="idea-icon">🏠</div>
+        <h4>Kira &amp; Konut Hub</h4>
+        <span class="idea-url">/kira-konut/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">80K+ küme</span><span class="metric-badge">KD: düşük</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">KOBİ blog için niş.</p>
+        <div class="idea-kw"><strong>KW</strong>kira artış oranı hesaplama (6.6K, +%83 trend), kira kontratı örneği (8.1K), dilekçe örneği (74K), tahliye dilekçesi, mazeret dilekçesi, taahhütname örneği, ev sahibine ihtar</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">06</div>
+        <div class="idea-icon">📞</div>
+        <h4>Cezaevi İletişim Rehberi</h4>
+        <span class="idea-url">/cezaevi-iletisim/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">6.6K +%9329 trend!</span><span class="metric-badge">KD: düşük</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Turkcell EN DOĞAL otorite; mega trend +%9329 yıllık.</p>
+        <div class="idea-kw"><strong>KW</strong>cezaevi kontör (6.6K), cezaevi kontör yükleme, cezaevi telefon, cezaevi dakika alma (700), mahkum görüşmesi, telefondan mahkum görüşme, cezaevine para yatırma, e-mektup gönderme cezaevi, cezaevi adres listesi</div>
+      </div>
+    </div>
+
+    <div class="note success">
+      <div class="note-icon">✓</div>
+      <div class="note-body">
+        <div class="note-title">Markaya Önceden İletilen Telekom Fikirleri</div>
+        <p>IMEI Sorgulama <strong>(\*) 550K</strong>, Güvenli Arama Kapatma <strong>(\*) 20K</strong>, Gizli Numara Kapatma <strong>(\*) 27.1K</strong> - bu üç fikir markaya iletilmişti. Gizli Numara için Turkcell'in mevcut destek sayfaları (5+ farklı URL) tek hub'a toplanmalı.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       08. A5 - AI / SİBER / DİĞER
+       ============================================================ -->
+  <section class="section" id="a5">
+    <div class="section-header">
+      <div class="section-num">08</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Cluster · Tech Blog</div>
+        <h2 class="section-title">A5 - <span class="hl">AI, Siber Güvenlik, Diğer</span></h2>
+        <p class="section-lead">
+          Mega trendler - AI cluster, siber güvenlik (phishing Mart'ta 4M!), deprem afet güvenliği (Turkcell brand güvenilirliği = doğal sahibi),
+          CV hazırlama aracı (Vodafone modeli), sosyal medya rehberi (turk.net dominant ama BiP köprü).
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="a5">Excel · A5 9 fikir + kelime listesi</a>
+          <a href="#" class="excel-btn" data-xls-sheet="nedir">Excel · Tanım/Nedir cluster</a>
+          <a href="#" class="excel-btn" data-xls-sheet="cv">Excel · CV/İş Başvuru cluster</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="idea-grid">
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">01</div>
+        <div class="idea-icon">🛡</div>
+        <h4>Siber Güvenlik Rehberi</h4>
+        <span class="idea-url">/siber-guvenlik-rehberi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">400K+ küme</span><span class="metric-badge">KD: 10-49</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Turkcell + McAfee + BiP güvenlik servisleriyle direkt köprü.</p>
+        <div class="idea-kw"><strong>KW</strong>siber güvenlik (9.9K, KD 10), phishing (368K, Mart 4M!), oltalama, e-mail dolandırıcılığı, siber zorbalık, deepfake nedir (8.1K, KD 49), 2FA nedir, iki adımlı doğrulama (1.9K), McAfee nedir (11K), AirTag nedir (10K), antivirüs program</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">02</div>
+        <div class="idea-icon">🌍</div>
+        <h4>Deprem &amp; Afet Güvenliği</h4>
+        <span class="idea-url">/deprem-ve-afet-guvenligi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">158K + alt</span><span class="metric-badge">KD: 3</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">turk.net 1. (2.571 trafik); Turkcell brand güvenilirliği = bu cluster'ın doğal sahibi.</p>
+        <div class="idea-kw"><strong>KW</strong>deprem güvenlik bilgileri (158K), deprem çantası içeriği, deprem sırasında ne yapmalı, android deprem uyarı sistemi (4.3K), en iyi deprem uygulamaları (4.2K), AFAD uyarı, kandilli rasathanesi, son depremler</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">03</div>
+        <div class="idea-icon">🤖</div>
+        <h4>Yapay Zeka Rehberi</h4>
+        <span class="idea-url">/yapay-zeka-rehberi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">1M+ küme</span><span class="metric-badge">KD: 16-100</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">Yüksek KD ama trend mega; long-tail kapısı açık.</p>
+        <div class="idea-kw"><strong>KW</strong>yapay zeka (823K, KD 50), ChatGPT Türkçe (135K, KD 16), Gemini AI (450K, KD 100), Claude AI (74K, KD 65), Deepseek (368K, KD 69), Grok (19K, KD 29), CapCut nedir (127K), Canva (14K), MidJourney (54K), Google Lens (131K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">04</div>
+        <div class="idea-icon">📲</div>
+        <h4>Sosyal Medya Rehberi</h4>
+        <span class="idea-url">/sosyal-medya-rehberi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">1M+ küme</span><span class="metric-badge">KD: 0-50</span><span class="idea-stars">★★</span></div>
+        <p class="idea-desc">turk.net dominant; BiP köprü içerik.</p>
+        <div class="idea-kw"><strong>KW</strong>whatsapp silinen mesajları geri getirme (16K), whatsapp silinen mesajları görme (14K), whatsapp web giriş (201K), instagram hesabı silme/dondurma (20K+), X giriş sorun (88K), telegram web (170K), threads nedir (22K), tiktok rehberi</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">05</div>
+        <div class="idea-icon">📺</div>
+        <h4>Dizi Rehberi (Turkcell TV+ Köprü)</h4>
+        <span class="idea-url">/dizi-rehberi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">500K+ küme</span><span class="metric-badge">KD: 0-23</span><span class="idea-stars">★</span></div>
+        <p class="idea-desc">Her popüler dizi için sayfa; Turkcell TV+ köprü.</p>
+        <div class="idea-kw"><strong>KW</strong>kızılcık şerbeti oyuncuları (105K), eşref rüya (79K), taşacak bu deniz (80K), wednesday 2. sezon (51K+9K), GTA 6 ne zaman (16K), iphone 16 ne zaman (20K), samsung s26 ultra (8.8K), supernatural (51K)</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">06</div>
+        <div class="idea-icon">🎮</div>
+        <h4>Oyun Rehberi</h4>
+        <span class="idea-url">/oyun-rehberi/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">150K+ küme</span><span class="metric-badge">KD: 0-50</span><span class="idea-stars">★</span></div>
+        <p class="idea-desc">Tarife önerilerine bridge (büyük dosya = büyük paket).</p>
+        <div class="idea-kw"><strong>KW</strong>GTA 6 (73K), PS5 (328K), PS5 fiyat (88K), Nintendo Switch (88K), PUBG kaç gb (2.4K), LOL kaç gb (5.7K), Fortnite kaç gb (4K), Valorant mobile, sistem gereksinimleri</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">07</div>
+        <div class="idea-icon">📄</div>
+        <h4>CV Hazırlama Aracı</h4>
+        <span class="idea-url">/cv-hazirla/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">186K+</span><span class="metric-badge">KD: 33-64</span><span class="idea-stars">★★★</span></div>
+        <p class="idea-desc">Vodafone tam bu modeli kullanıyor (/cv-hazirlama-araci, 6.295 trafik). Online CV oluşturucu + PDF çıktı.</p>
+        <div class="idea-kw"><strong>KW</strong>CV hazırlama (186K), CV hazırlama ücretsiz (30K), ücretsiz CV hazırlama (20K), CV hazırlama PDF (7.2K), özgeçmiş hazırlama (3K), telefondan CV (1.2K), motivasyon mektubu, mülakat soruları</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">08</div>
+        <div class="idea-icon">🎟</div>
+        <h4>Çiçek / Hediye / Etkinlik</h4>
+        <span class="idea-url">/cicek-hediye-etkinlik/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">300K+ küme</span><span class="metric-badge">KD: 0-67</span><span class="idea-stars">★</span></div>
+        <p class="idea-desc">Turkcell Prime ile köprü.</p>
+        <div class="idea-kw"><strong>KW</strong>taze çiçek (155K), Biletix (227K), Biletix konser (5.5K), sinema bilet fiyatları (18.1K), Vialand bilet (11K), uçak bileti kampanya, müzekart</div>
+      </div>
+
+      <div class="idea-card" data-marka="hayir">
+        <div class="idea-num">09</div>
+        <div class="idea-icon">⭐</div>
+        <h4>Burç / Fal / İsim Anlamı</h4>
+        <span class="idea-url">/burc-fal-isim/</span>
+        <div class="idea-metrics"><span class="metric-badge coral">300K+ küme</span><span class="metric-badge">KD: 0-36</span><span class="idea-stars">★</span></div>
+        <p class="idea-desc">Eğlence niche, lifestyle blog için.</p>
+        <div class="idea-kw"><strong>KW</strong>yükselen burç hesaplama (201K, KD 10), burç uyumu, uyumlu burçlar, kahve falı (18.1K, KD 12), tarot falı (KD 36), el falı, yıldız falı, isim anlamı (6.6K, KD 3), bebek ismi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       09. RAKİP PATTERN ANALİZİ
+       ============================================================ -->
+  <section class="section" id="rakip">
+    <div class="section-header">
+      <div class="section-num">09</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Veri · Rakip Modelleri</div>
+        <h2 class="section-title">Rakip URL <span class="hl">Pattern Analizi</span></h2>
+        <p class="section-lead">
+          Rakiplerin en çok trafik çeken URL pattern'leri. Tek sayfa başarı modelleri: Vatan /hesap-makinesi (33.991 trafik), Vodafone /resmi-tatiller (30.896),
+          Vodafone /brutten-nete-maas-hesaplama (7.365), Vodafone UK /mobile/data-calculator (56.6K), Verizon /coverage-map (109K).
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="rakip">Excel · Rakip URL pattern detayı</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <div class="source-pill">Ahrefs Content Gap · Rakip URL pattern</div>
+      <div class="chart-title">Rakip Tek-Sayfa Başarı Modelleri - Trafik vs Keyword</div>
+      <div class="chart-sub">Aylık organik trafik (yatay) vs keyword sayısı (dikey)</div>
+      <div class="chart-container">
+        <canvas id="chartRakipModel"></canvas>
+      </div>
+    </div>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Rakip</th>
+            <th>URL Pattern</th>
+            <th>KW Sayısı</th>
+            <th>Aylık Trafik</th>
+            <th>Toplam Hacim</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Vodafone</td><td class="num">/teknoloji/blog</td><td>767</td><td class="num">73.149</td><td class="num">1.39M</td></tr>
+          <tr><td>Vodafone</td><td class="num">/freezone/blog</td><td>902</td><td class="num">53.292</td><td class="num">1.54M</td></tr>
+          <tr><td>Vodafone</td><td class="num">/ev-internet/blog</td><td>817</td><td class="num">43.636</td><td class="num">1.45M</td></tr>
+          <tr><td>Vodafone</td><td class="num">/resmi-tatiller</td><td>579</td><td class="num coral-cell">30.896</td><td class="num">802K</td></tr>
+          <tr><td>Vodafone</td><td class="num">/mobil-hat/blog</td><td>587</td><td class="num">20.815</td><td class="num">4.76M</td></tr>
+          <tr><td>Vodafone</td><td class="num">/brutten-nete-maas-hesaplama</td><td>110</td><td class="num coral-cell">7.365</td><td class="num">561K</td></tr>
+          <tr><td>Vodafone UK</td><td class="num">/mobile/data-calculator</td><td>469</td><td class="num pos-cell">56.6K</td><td class="num">-</td></tr>
+          <tr><td>Verizon</td><td class="num">/coverage-map</td><td>7.041</td><td class="num pos-cell">109K</td><td class="num">-</td></tr>
+          <tr><td>Turk Telekom</td><td class="num">/iletisim-numaralari</td><td>133</td><td class="num">39.901</td><td class="num">264K</td></tr>
+          <tr><td>Turk Telekom</td><td class="num">/AreaCodes</td><td>200</td><td class="num">5.869</td><td class="num">159K</td></tr>
+          <tr><td>Vatan Bilgisayar</td><td class="num">/hesap-makinesi</td><td>48</td><td class="num coral-cell">33.991</td><td class="num">2.28M</td></tr>
+          <tr><td>Turk.net</td><td class="num">/blog/instagram-hesabimi-nasil-silebilirim</td><td>99</td><td class="num">19.317</td><td class="num">305K</td></tr>
+          <tr><td>Turk.net</td><td class="num">/blog/whatsappta-silinen-mesajlari-geri-getirme</td><td>180</td><td class="num">15.953</td><td class="num">250K</td></tr>
+          <tr><td>Turk.net</td><td class="num">/cayma-bedeli-hesaplama</td><td>-</td><td class="num">1.427</td><td class="num">3K</td></tr>
+          <tr><td>Enuygun</td><td class="num">/gsm</td><td>7.144</td><td class="num pos-cell">17K</td><td class="num">-</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note info">
+      <div class="note-icon">i</div>
+      <div class="note-body">
+        <div class="note-title">Stratejik Çıkarım</div>
+        <p>Rakipler <strong>tek bir tematik hub sayfasından</strong> aylık 30-110K trafik alıyor. Bu pattern Turkcell için 5+ farklı hub'a uygulanabilir: Hesap Makinesi, Resmi Tatiller, Hava Durumu, Coverage Map, Data Calculator, Brüt-Net Hesaplama.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. DfS DOĞRULAMA
+       ============================================================ -->
+  <section class="section" id="dfs">
+    <div class="section-header">
+      <div class="section-num">10</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Veri · DataForSEO</div>
+        <h2 class="section-title">DataForSEO <span class="hl">Doğrulama</span></h2>
+        <p class="section-lead">
+          150+ kritik keyword Mayıs 2026'da TR/tr için doğrulandı. Aşağıdaki grafikler KD ve intent dağılımını gösterir -
+          fırsatların büyük çoğunluğu <strong>düşük KD + informational intent</strong>, yani AI Overview için ideal.
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="dfs">Excel · DfS 150+ KW tam tablo</a>
+          <a href="#" class="excel-btn" data-xls-sheet="tum">Excel · Tüm 60K fırsat</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-grid-2">
+      <div class="chart-card">
+        <div class="chart-title">KD Dağılımı (150+ KW)</div>
+        <div class="chart-sub">Doğrulanmış keyword'lerin keyword difficulty dağılımı</div>
+        <div class="chart-container">
+          <canvas id="chartKDDagilim"></canvas>
+        </div>
+      </div>
+      <div class="chart-card">
+        <div class="chart-title">Intent Dağılımı (150+ KW)</div>
+        <div class="chart-sub">AI Overview için informational ağırlığı kritik</div>
+        <div class="chart-container">
+          <canvas id="chartIntentDagilim"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family: var(--font-display); font-weight: 700; color: var(--teal); margin: 32px 0 14px; font-size: 22px;">Top 30 Doğrulanmış Anahtar Kelime</h3>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Keyword</th>
+            <th>Aylık Hacim</th>
+            <th>KD</th>
+            <th>Intent</th>
+            <th>Marka</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>hava durumu</td><td class="num">55.600.000</td><td>39</td><td>informational</td><td class="coral-cell">(*)</td></tr>
+          <tr><td>yarınki hava durumu</td><td class="num">16.600.000</td><td>23</td><td>informational</td><td class="coral-cell">(*)</td></tr>
+          <tr><td>istanbul hava durumu</td><td class="num">7.480.000</td><td>19</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>ankara hava durumu</td><td class="num">6.120.000</td><td>28</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>izmir hava durumu</td><td class="num">3.350.000</td><td>23</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>hesap makinesi</td><td class="num">2.740.000</td><td>-</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>kredi hesaplama</td><td class="num">1.220.000</td><td>45</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>kurban bayramı ne zaman</td><td class="num">1.220.000</td><td>11</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>internet hız testi</td><td class="num">1.000.000</td><td>34</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>yapay zeka</td><td class="num">823.000</td><td>50</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>anneler günü ne zaman</td><td class="num">673.000</td><td>8</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>yüzde hesaplama (MEVCUT)</td><td class="num">673.000</td><td>12</td><td>informational</td><td class="coral-cell">(*)</td></tr>
+          <tr><td>IMEI Sorgulama</td><td class="num">550.000</td><td>14</td><td>informational</td><td class="coral-cell">(*)</td></tr>
+          <tr><td>babalar günü ne zaman</td><td class="num">450.000</td><td>-</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>29 ekim cumhuriyet bayramı</td><td class="num">450.000</td><td>-</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>asgari ücret 2026</td><td class="num">368.000</td><td>9</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>phishing (Mart 4M)</td><td class="num">368.000</td><td>-</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>yaş hesaplama (MEVCUT)</td><td class="num">301.000</td><td>9</td><td>informational</td><td class="coral-cell">(*)</td></tr>
+          <tr><td>KDV hesaplama</td><td class="num">201.000</td><td>19</td><td>informational</td><td class="coral-cell">(*)</td></tr>
+          <tr><td>kıdem tazminatı hesaplama</td><td class="num">201.000</td><td>27</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>yükselen burç hesaplama</td><td class="num">201.000</td><td>10</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>doğum günü mesajları</td><td class="num">201.000</td><td>-</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>güzel sözler</td><td class="num">165.000</td><td>11</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>günaydın mesajları</td><td class="num">135.000</td><td class="pos-cell">4</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>SGK işe giriş</td><td class="num">135.000</td><td>20</td><td>navigational</td><td>YENİ</td></tr>
+          <tr><td>anlamlı sözler</td><td class="num">110.000</td><td class="pos-cell">4</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>HGS bakiye sorgulama</td><td class="num">110.000</td><td>19</td><td>navigational</td><td>YENİ</td></tr>
+          <tr><td>plaka sorgu</td><td class="num">74.000</td><td class="pos-cell">4</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>karakter sayacı</td><td class="num">14.800</td><td class="pos-cell">3</td><td>informational</td><td>YENİ</td></tr>
+          <tr><td>cezaevi kontör (+%9329 trend)</td><td class="num">6.600</td><td>-</td><td>informational</td><td>YENİ</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. İLETİLEN vs YENİ FİKİRLER
+       ============================================================ -->
+  <section class="section" id="karsilastirma">
+    <div class="section-header">
+      <div class="section-num">11</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Stok Karşılaştırma</div>
+        <h2 class="section-title">Markaya İletilenler <span class="hl">vs Yeni Eklemeler</span></h2>
+        <p class="section-lead">
+          Sol sütun: Excel referans dosyasında markaya iletilmiş 11 fikir. Sağ sütun: bu raporla yeni eklenen 33+ stratejik fikir.
+          Toplam 44 fikir, 120M+ adreslenebilir hacim.
+        </p>
+        <div class="excel-cta-row">
+          <a href="#" class="excel-btn" data-xls-sheet="ozet">Excel · Yönetici özeti</a>
+          <a href="#" class="excel-btn" data-xls-sheet="cluster">Excel · 35 cluster özeti</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare-grid">
+      <div class="compare-col iletilen">
+        <h3>Markaya İletilmiş Fikirler (*)</h3>
+        <p class="caption" style="color: var(--ink-3); font-size: 12px; margin-bottom: 16px;">Excel referans dosyasından - 11 fikir + 1 niş</p>
+        <ul class="compare-list">
+          <li><span class="kw">Yarınki hava durumu / 5 günlük</span><span class="hacim">41.6M</span></li>
+          <li><span class="kw">IMEI Sorgulama</span><span class="hacim">2.43M</span></li>
+          <li><span class="kw">Kaç Gün Kaldı Hesaplama</span><span class="hacim">1.42M</span></li>
+          <li><span class="kw">Yaş Hesaplama (MEVCUT)</span><span class="hacim">1.41M</span></li>
+          <li><span class="kw">Yüzde Hesaplama (MEVCUT)</span><span class="hacim">1.21M</span></li>
+          <li><span class="kw">KDV Hesaplama</span><span class="hacim">916K</span></li>
+          <li><span class="kw">Brütten Nete Hesaplama</span><span class="hacim">491K</span></li>
+          <li><span class="kw">Özel/Gizli Numara Kapatma</span><span class="hacim">277K</span></li>
+          <li><span class="kw">Güvenli Arama Kapatma</span><span class="hacim">142K</span></li>
+          <li><span class="kw">İndirim Hesaplama</span><span class="hacim">118K</span></li>
+          <li><span class="kw">Özel/Gizli Numara Bulma</span><span class="hacim">53K</span></li>
+          <li><span class="kw">kb to gb dönüştürücü</span><span class="hacim">niş</span></li>
+        </ul>
+      </div>
+
+      <div class="compare-col yeni">
+        <h3>Bu Raporla Yeni Eklenenler</h3>
+        <p class="caption" style="color: var(--ink-3); font-size: 12px; margin-bottom: 16px;">33+ stratejik yeni fikir · DfS doğrulanmış</p>
+        <ul class="compare-list">
+          <li><span class="kw">Veri Kullanım Hesaplayıcı (Vodafone UK)</span><span class="hacim">A6.1</span></li>
+          <li><span class="kw">5G Kapsama Haritası (Verizon)</span><span class="hacim">A6.3 +%2500</span></li>
+          <li><span class="kw">Sınırsız Mecra Paketleri (facet)</span><span class="hacim">A6.4</span></li>
+          <li><span class="kw">Persona Odaklı Tarifeler (9 persona)</span><span class="hacim">A6.5</span></li>
+          <li><span class="kw">Teknoloji Sözlüğü Hub</span><span class="hacim">200K+</span></li>
+          <li><span class="kw">Tarife Karşılaştırma Fark Detayı</span><span class="hacim">A6.7</span></li>
+          <li><span class="kw">Paket Listeleme İçerikleri</span><span class="hacim">A6.8</span></li>
+          <li><span class="kw">Yükselen Burç Hesaplama</span><span class="hacim">201K</span></li>
+          <li><span class="kw">Kıdem &amp; İhbar Tazminatı</span><span class="hacim">228K</span></li>
+          <li><span class="kw">Asgari Ücret 2026 (canlı)</span><span class="hacim">368K +%210K trend</span></li>
+          <li><span class="kw">Karakter Sayacı (KD 3!)</span><span class="hacim">14.8K</span></li>
+          <li><span class="kw">Yıllık İzin Hesaplama (KD 4)</span><span class="hacim">9.9K</span></li>
+          <li><span class="kw">SGK İşe Giriş</span><span class="hacim">135K</span></li>
+          <li><span class="kw">HGS Bakiye Sorgulama</span><span class="hacim">110K</span></li>
+          <li><span class="kw">Plaka Sorgu (KD 4!)</span><span class="hacim">74K</span></li>
+          <li><span class="kw">Pasaport Ücreti 2026 (KD 3!)</span><span class="hacim">18K</span></li>
+          <li><span class="kw">Cezaevi İletişim (+%9329 trend!)</span><span class="hacim">6.6K</span></li>
+          <li><span class="kw">Resmi Tatiller 2026 (KD 3!)</span><span class="hacim">22K +%8303</span></li>
+          <li><span class="kw">Anneler/Babalar Günü Mega Hub</span><span class="hacim">1.12M</span></li>
+          <li><span class="kw">29 Ekim Cumhuriyet Bayramı</span><span class="hacim">450K (Ekim 5M)</span></li>
+          <li><span class="kw">Kurban Bayramı 2026 Hub</span><span class="hacim">1.22M (May 6M)</span></li>
+          <li><span class="kw">Günaydın/Anlamlı Sözler (KD 4)</span><span class="hacim">245K</span></li>
+          <li><span class="kw">Doğum Günü Mesajları Hub</span><span class="hacim">201K yıl boyu</span></li>
+          <li><span class="kw">Siber Güvenlik + Phishing</span><span class="hacim">378K</span></li>
+          <li><span class="kw">Deprem &amp; Afet Güvenliği</span><span class="hacim">158K</span></li>
+          <li><span class="kw">Yapay Zeka Rehberi</span><span class="hacim">1M+</span></li>
+          <li><span class="kw">CV Hazırlama Aracı (Vodafone)</span><span class="hacim">186K</span></li>
+          <li><span class="kw">Sosyal Medya / BiP Köprü</span><span class="hacim">1M+</span></li>
+          <li><span class="kw">+ 5 cluster mini-hub daha</span><span class="hacim">B1'de detay</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="note success">
+      <div class="note-icon">✓</div>
+      <div class="note-body">
+        <div class="note-title">Yeni Eklemelerin Karakteri</div>
+        <p>Mevcut liste güçlü ama <strong>yıllık spike trafiği</strong> (Kurban Bayramı, 29 Ekim, Anneler Günü), <strong>2026 plan perspektifleri</strong> (Vodafone UK Data Calculator, Verizon Coverage Map, Sınırsız facet, Persona), ve <strong>düşük KD evergreen</strong> fırsatlar (Karakter sayacı KD 3, Yıllık izin KD 4, Günaydın mesajları KD 4) önceki listede yoktu. Bu eklemelerin çoğu <strong>brand güveni gerektiren cluster</strong>'larda (sorgulama, SGK, cezaevi iletişim).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       12. SONRAKİ ADIMLAR
+       ============================================================ -->
+  <section class="section" id="sonraki">
+    <div class="section-header">
+      <div class="section-num">12</div>
+      <div class="section-title-block">
+        <div class="section-eyebrow">Aksiyon</div>
+        <h2 class="section-title">Sonraki <span class="hl">Adımlar</span></h2>
+        <p class="section-lead">
+          Bu rapor "ne ve neden" sorusuna odaklandı. Aşağıda her fikir için bir sonraki adım önerisi.
+        </p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="note info">
+        <div class="note-icon">1</div>
+        <div class="note-body">
+          <div class="note-title">Hava Durumu (A6.2) için ICT brief</div>
+          <p>MGM API entegrasyonu + URL yapısı (81 il × 4 alt: yarınki/5 günlük/saatlik/haftalık) + WeatherForecast schema. Ayrı bir teknik brief dosyası hazırlanabilir.</p>
+        </div>
+      </div>
+      <div class="note info">
+        <div class="note-icon">2</div>
+        <div class="note-body">
+          <div class="note-title">Data Calculator (A6.1) widget logic</div>
+          <p>Slider'lı UI mockup + paket öneri matrisi (kullanım profili → mevcut Turkcell tarifeleri) + AI Overview FAQ formatı.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="note warn">
+        <div class="note-icon">3</div>
+        <div class="note-body">
+          <div class="note-title">Persona Tarifeler (A6.5) içerik şablonu</div>
+          <p>Her persona için: tipik veri/dakika/sosyal medya profili + 2-3 önerilen tarife + "Neden bu persona için?" + FAQ.</p>
+        </div>
+      </div>
+      <div class="note warn">
+        <div class="note-icon">4</div>
+        <div class="note-body">
+          <div class="note-title">Teknoloji Sözlüğü (A6.6) prioritize edilmiş liste</div>
+          <p>100+ tanımdan öncelikli 20'si: telekom-uyumu + KD + hacim üçgeninde. Schema markup şablonu hazır.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="note danger">
+      <div class="note-icon">!</div>
+      <div class="note-body">
+        <div class="note-title">Dikkat: Markanın mevcut sayfaları</div>
+        <p>Gizli numara için Turkcell'in <strong>5+ farklı destek URL'i</strong> dağınık halde. Hub konsolidasyonu öncesi mevcut sayfaların kanibalizasyon analizi yapılmalı. Aynı durum Muud Premium içerikleri için de geçerli.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="report-footer">
+    <div class="footer-brand">
+      <div class="o-mark"></div>
+      <div class="footer-text">
+        <strong>Inbound</strong>
+        welcome@inbound.com.tr · SEO &amp; Marketing Intelligence
+      </div>
+    </div>
+    <div class="footer-text" style="text-align: right;">
+      <strong>Turkcell Trafik Fırsatları Raporu</strong>
+      Mayıs 2026 · v3 · 60.715 KW · 35 cluster · 44 fikir
+    </div>
+  </footer>
+
+</main>
+
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Chart.js global defaults - Inbound brand
+  Chart.register(ChartDataLabels);
+  Chart.defaults.font.family = "'Outfit', 'Calibri', sans-serif";
+  Chart.defaults.color = '#10332F';
+  Chart.defaults.borderColor = '#E0E0E0';
+
+  const CORAL = '#FF7B52';
+  const CORAL_TINT = '#FFE3D8';
+  const TEAL = '#10332F';
+  const TEAL_SOFT = '#1A4238';
+  const MINT = '#E8F5E9';
+  const GREEN = '#2E7D32';
+  const RED = '#D32F2F';
+  const GOLD = '#F5A623';
+  const GRAY = '#4A4A4A';
+
+  // =========================================================
+  // GRAFIK 1: TOP 20 FIRSAT (HORIZONTAL BAR)
+  // =========================================================
+  const topFirsatLabels = [
+    'hava durumu (*)',
+    'yarınki hava durumu (*)',
+    'istanbul hava durumu',
+    'ankara hava durumu',
+    'izmir hava durumu',
+    'hesap makinesi',
+    'kredi hesaplama',
+    'kurban bayramı ne zaman',
+    'internet hız testi',
+    'yapay zeka',
+    'anneler günü ne zaman',
+    'yüzde hesaplama (*) MEVCUT',
+    'IMEI Sorgulama (*)',
+    'babalar günü ne zaman',
+    '29 ekim cumhuriyet bayramı',
+    'asgari ücret 2026',
+    'yaş hesaplama (*) MEVCUT',
+    'KDV hesaplama (*)',
+    'kıdem tazminatı hesaplama',
+    'yükselen burç hesaplama'
+  ];
+  const topFirsatData = [
+    55600000, 16600000, 7480000, 6120000, 3350000,
+    2740000, 1220000, 1220000, 1000000, 823000,
+    673000, 673000, 550000, 450000, 450000,
+    368000, 301000, 201000, 201000, 201000
+  ];
+  // Markaya iletilenleri coral, yenileri teal
+  const markayaIletilen = [true, true, false, false, false, false, false, false, false, false, false, true, true, false, false, false, true, true, false, false];
+  const barColors = markayaIletilen.map(m => m ? CORAL : TEAL);
+
+  new Chart(document.getElementById('chartTopFirsatlar'), {
+    type: 'bar',
+    data: {
+      labels: topFirsatLabels,
+      datasets: [{
+        label: 'Aylık Hacim',
+        data: topFirsatData,
+        backgroundColor: barColors,
+        borderRadius: 4,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        datalabels: {
+          anchor: 'end', align: 'right',
+          color: TEAL,
+          font: { family: "'Bricolage Grotesque', sans-serif", weight: 700, size: 11 },
+          formatter: (v) => v >= 1000000 ? (v/1000000).toFixed(1) + 'M' : v >= 1000 ? Math.round(v/1000) + 'K' : v
+        },
+        tooltip: {
+          backgroundColor: TEAL,
+          titleFont: { family: "'Bricolage Grotesque', sans-serif", size: 13 },
+          bodyFont: { family: "'Outfit', sans-serif" },
+          callbacks: {
+            label: (ctx) => ctx.parsed.x.toLocaleString('tr-TR') + ' / ay'
+          }
+        }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: { color: '#F0EDE8' },
+          ticks: {
+            color: '#8A8A8A',
+            font: { family: "'Outfit', sans-serif", size: 11 },
+            callback: (v) => v >= 1000000 ? (v/1000000) + 'M' : v >= 1000 ? (v/1000) + 'K' : v
+          }
+        },
+        y: {
+          grid: { display: false },
+          ticks: {
+            color: TEAL,
+            font: { family: "'Outfit', sans-serif", size: 12 }
+          }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // GRAFIK 2: CLUSTER PAY (DOUGHNUT) - Top 12
+  // =========================================================
+  new Chart(document.getElementById('chartClusterPay'), {
+    type: 'doughnut',
+    data: {
+      labels: [
+        'Sosyal Medya', 'Telefon/Cihaz', 'Oyun Rehber', 'Tanım/Nedir',
+        'Yemek Tarif', 'Birim Dönüşüm', 'İnternet/Modem', 'Tatil/Bayram',
+        'Otomotiv', 'E-Devlet/Sorgu', 'Telefon Ayar', 'Nasıl Yapılır'
+      ],
+      datasets: [{
+        data: [6654630, 5675640, 1919850, 1250860, 1244710, 957100, 876820, 829050, 729680, 695070, 675090, 593870],
+        backgroundColor: [
+          CORAL, TEAL, GOLD, GREEN, '#8A6FBF', '#4A9BAB', '#D67B5F', RED,
+          '#A0B7AB', '#E85F36', '#1A4238', '#F5A623'
+        ],
+        borderColor: '#FFF',
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '55%',
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: {
+            color: TEAL,
+            font: { family: "'Outfit', sans-serif", size: 11 },
+            padding: 8,
+            boxWidth: 14
+          }
+        },
+        datalabels: {
+          color: '#fff',
+          font: { family: "'Bricolage Grotesque', sans-serif", weight: 700, size: 10 },
+          formatter: (v, ctx) => {
+            const sum = ctx.chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+            const pct = (v * 100 / sum);
+            return pct > 4 ? pct.toFixed(0) + '%' : '';
+          }
+        },
+        tooltip: {
+          backgroundColor: TEAL,
+          callbacks: {
+            label: (ctx) => ctx.label + ': ' + (ctx.parsed/1000000).toFixed(2) + 'M/ay'
+          }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // GRAFIK 3: HACIM PIRAMIDI (VERTICAL BAR)
+  // =========================================================
+  new Chart(document.getElementById('chartHacimPiramidi'), {
+    type: 'bar',
+    data: {
+      labels: ['Volume ≥ 10', 'Volume ≥ 100', 'Volume ≥ 500', 'Volume ≥ 1K', 'Volume ≥ 5K'],
+      datasets: [{
+        label: 'Keyword Sayısı',
+        data: [60715, 48087, 12826, 7247, 1621],
+        backgroundColor: [CORAL, '#FF9A7A', '#FFB8A0', '#FFD4C2', '#FFE3D8'],
+        borderRadius: 8,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        datalabels: {
+          anchor: 'end', align: 'top',
+          color: TEAL,
+          font: { family: "'Bricolage Grotesque', sans-serif", weight: 700, size: 13 },
+          formatter: (v) => v.toLocaleString('tr-TR')
+        },
+        tooltip: { enabled: false }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            color: TEAL,
+            font: { family: "'Outfit', sans-serif", weight: 500, size: 12 }
+          }
+        },
+        y: {
+          beginAtZero: true,
+          grid: { color: '#F0EDE8' },
+          ticks: {
+            color: '#8A8A8A',
+            font: { family: "'Outfit', sans-serif", size: 10 },
+            callback: (v) => v >= 1000 ? (v/1000) + 'K' : v
+          }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // GRAFIK 4: BAYRAM SPIKE (MULTI-LINE)
+  // =========================================================
+  const aylar = ['Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık', 'Ocak', 'Şubat', 'Mart'];
+  new Chart(document.getElementById('chartBayramSpike'), {
+    type: 'line',
+    data: {
+      labels: aylar,
+      datasets: [
+        {
+          label: 'Kurban Bayramı',
+          data: [4090000, 6120000, 1000000, 165000, 110000, 165000, 135000, 201000, 201000, 368000, 550000, 1830000],
+          borderColor: CORAL,
+          backgroundColor: 'rgba(255,123,82,0.08)',
+          borderWidth: 2.5,
+          tension: 0.35,
+          fill: true,
+          pointBackgroundColor: CORAL,
+          pointRadius: 4,
+          pointHoverRadius: 6
+        },
+        {
+          label: 'Anneler Günü',
+          data: [1500000, 5000000, 110000, 40500, 49500, 60500, 90500, 201000, 110000, 135000, 201000, 368000],
+          borderColor: TEAL,
+          backgroundColor: 'rgba(16,51,47,0.05)',
+          borderWidth: 2.5,
+          tension: 0.35,
+          fill: true,
+          pointBackgroundColor: TEAL,
+          pointRadius: 4,
+          pointHoverRadius: 6
+        },
+        {
+          label: '29 Ekim',
+          data: [33100, 14800, 6600, 6600, 14800, 40500, 5000000, 60500, 18100, 9900, 14800, 27100],
+          borderColor: GOLD,
+          backgroundColor: 'rgba(245,166,35,0.08)',
+          borderWidth: 2.5,
+          tension: 0.35,
+          fill: true,
+          pointBackgroundColor: GOLD,
+          pointRadius: 4,
+          pointHoverRadius: 6
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: {
+            color: TEAL,
+            font: { family: "'Bricolage Grotesque', sans-serif", weight: 600, size: 12 },
+            padding: 16,
+            usePointStyle: true,
+            pointStyle: 'circle'
+          }
+        },
+        datalabels: { display: false },
+        tooltip: {
+          backgroundColor: TEAL,
+          callbacks: {
+            label: (ctx) => ctx.dataset.label + ': ' + ctx.parsed.y.toLocaleString('tr-TR')
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: '#F0EDE8' },
+          ticks: { color: '#8A8A8A', font: { family: "'Outfit', sans-serif", size: 11 } }
+        },
+        y: {
+          beginAtZero: true,
+          grid: { color: '#F0EDE8' },
+          ticks: {
+            color: '#8A8A8A',
+            font: { family: "'Outfit', sans-serif", size: 10 },
+            callback: (v) => v >= 1000000 ? (v/1000000) + 'M' : v >= 1000 ? (v/1000) + 'K' : v
+          }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // GRAFIK 5: MESAJ KD (BAR)
+  // =========================================================
+  new Chart(document.getElementById('chartMesajKD'), {
+    type: 'bar',
+    data: {
+      labels: [
+        'günaydın mesajları',
+        'anlamlı sözler',
+        'güzel sözler',
+        'doğum günü mesajları',
+        'iyi geceler mesajları',
+        'sevgililer günü mesajları',
+        'anneler günü mesajları',
+        'ramazan bayramı mesajları',
+        'bayram mesajları'
+      ],
+      datasets: [
+        {
+          label: 'Aylık Ortalama Hacim',
+          data: [135000, 110000, 165000, 201000, 40500, 33100, 74000, 74000, 14800],
+          backgroundColor: TEAL,
+          borderRadius: 4,
+          borderSkipped: false
+        },
+        {
+          label: 'Spike Ayı (Maks)',
+          data: [165000, 110000, 165000, 246000, 40500, 368000, 1000000, 823000, 110000],
+          backgroundColor: CORAL,
+          borderRadius: 4,
+          borderSkipped: false
+        }
+      ]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: {
+            color: TEAL,
+            font: { family: "'Bricolage Grotesque', sans-serif", weight: 600, size: 12 },
+            padding: 14,
+            usePointStyle: true
+          }
+        },
+        datalabels: {
+          display: (ctx) => ctx.dataset.data[ctx.dataIndex] >= 100000,
+          color: '#fff',
+          font: { family: "'Bricolage Grotesque', sans-serif", weight: 700, size: 9 },
+          formatter: (v) => v >= 1000000 ? (v/1000000).toFixed(1) + 'M' : Math.round(v/1000) + 'K'
+        },
+        tooltip: { backgroundColor: TEAL }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: { color: '#F0EDE8' },
+          ticks: {
+            color: '#8A8A8A',
+            font: { family: "'Outfit', sans-serif", size: 10 },
+            callback: (v) => v >= 1000000 ? (v/1000000) + 'M' : v >= 1000 ? (v/1000) + 'K' : v
+          }
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: TEAL, font: { family: "'Outfit', sans-serif", size: 12 } }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // GRAFIK 6: RAKIP MODEL (BAR - TRAFIK)
+  // =========================================================
+  new Chart(document.getElementById('chartRakipModel'), {
+    type: 'bar',
+    data: {
+      labels: [
+        'Verizon /coverage-map',
+        'Vodafone /teknoloji/blog',
+        'Vodafone UK /data-calculator',
+        'Vodafone /freezone/blog',
+        'Vodafone /ev-internet/blog',
+        'TT /iletisim-numaralari',
+        'Vatan /hesap-makinesi',
+        'Vodafone /resmi-tatiller',
+        'Vodafone /mobil-hat/blog',
+        'Turk.net /instagram-silme',
+        'Enuygun /gsm',
+        'Turk.net /whatsapp-silinen',
+        'Vodafone /brutten-nete-maas'
+      ],
+      datasets: [{
+        label: 'Aylık Trafik',
+        data: [109000, 73149, 56600, 53292, 43636, 39901, 33991, 30896, 20815, 19317, 17000, 15953, 7365],
+        backgroundColor: (ctx) => {
+          const i = ctx.dataIndex;
+          // Verizon/Vodafone UK öne çıkar (turuncu), diğerleri teal
+          if (i === 0 || i === 2 || i === 6) return CORAL;
+          return TEAL;
+        },
+        borderRadius: 4,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        datalabels: {
+          anchor: 'end', align: 'right',
+          color: TEAL,
+          font: { family: "'Bricolage Grotesque', sans-serif", weight: 700, size: 11 },
+          formatter: (v) => v >= 1000 ? Math.round(v/1000) + 'K' : v
+        },
+        tooltip: {
+          backgroundColor: TEAL,
+          callbacks: {
+            label: (ctx) => ctx.parsed.x.toLocaleString('tr-TR') + ' trafik/ay'
+          }
+        }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          grid: { color: '#F0EDE8' },
+          ticks: {
+            color: '#8A8A8A',
+            font: { family: "'Outfit', sans-serif", size: 10 },
+            callback: (v) => v >= 1000 ? (v/1000) + 'K' : v
+          }
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: TEAL, font: { family: "'Outfit', sans-serif", size: 11 } }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // GRAFIK 7: KD DAĞILIMI (DOUGHNUT)
+  // =========================================================
+  new Chart(document.getElementById('chartKDDagilim'), {
+    type: 'doughnut',
+    data: {
+      labels: ['KD ≤ 10 (Çok kolay)', 'KD 11-20 (Kolay)', 'KD 21-30 (Orta)', 'KD 31+ (Zor)'],
+      datasets: [{
+        data: [42, 38, 26, 14],
+        backgroundColor: [GREEN, '#7CB342', GOLD, RED],
+        borderColor: '#FFF',
+        borderWidth: 3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '60%',
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: TEAL,
+            font: { family: "'Outfit', sans-serif", weight: 500, size: 11 },
+            padding: 10,
+            usePointStyle: true
+          }
+        },
+        datalabels: {
+          color: '#fff',
+          font: { family: "'Bricolage Grotesque', sans-serif", weight: 700, size: 14 },
+          formatter: (v, ctx) => {
+            const sum = ctx.chart.data.datasets[0].data.reduce((a,b)=>a+b,0);
+            return Math.round(v * 100 / sum) + '%';
+          }
+        },
+        tooltip: {
+          backgroundColor: TEAL,
+          callbacks: {
+            label: (ctx) => ctx.label + ': ' + ctx.parsed + ' KW'
+          }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // GRAFIK 8: INTENT DAĞILIMI (DOUGHNUT)
+  // =========================================================
+  new Chart(document.getElementById('chartIntentDagilim'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Informational', 'Navigational', 'Commercial', 'Transactional'],
+      datasets: [{
+        data: [89, 18, 7, 6],
+        backgroundColor: [CORAL, TEAL, GOLD, GREEN],
+        borderColor: '#FFF',
+        borderWidth: 3
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '60%',
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: TEAL,
+            font: { family: "'Outfit', sans-serif", weight: 500, size: 11 },
+            padding: 10,
+            usePointStyle: true
+          }
+        },
+        datalabels: {
+          color: '#fff',
+          font: { family: "'Bricolage Grotesque', sans-serif", weight: 700, size: 14 },
+          formatter: (v, ctx) => {
+            const sum = ctx.chart.data.datasets[0].data.reduce((a,b)=>a+b,0);
+            return Math.round(v * 100 / sum) + '%';
+          }
+        },
+        tooltip: {
+          backgroundColor: TEAL,
+          callbacks: {
+            label: (ctx) => ctx.label + ': ' + ctx.parsed + ' KW'
+          }
+        }
+      }
+    }
+  });
+
+  // =========================================================
+  // INTERACTIONS - SIDEBAR, SCROLL, PROGRESS, BACK-TO-TOP
+  // =========================================================
+  const sidebar = document.getElementById('sidebar');
+  const menuToggle = document.getElementById('menuToggle');
+  const sections = document.querySelectorAll('.section, .hero');
+  const navLinks = document.querySelectorAll('.sidebar nav a');
+  const backToTop = document.getElementById('backToTop');
+  const progressBar = document.getElementById('progressBar');
+
+  menuToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sidebar.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 1100 && sidebar.classList.contains('active')) {
+      if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
+        sidebar.classList.remove('active');
+      }
+    }
+  });
+
+  function handleScroll() {
+    const scrollTotal = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (window.scrollY / scrollTotal) * 100;
+    progressBar.style.width = Math.min(scrollPercent, 100) + '%';
+
+    backToTop.style.display = window.scrollY > 400 ? 'flex' : 'none';
+  }
+
+  // Intersection observer için tüm sections (#top dahil)
+  const obsTargets = document.querySelectorAll('main [id]');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, { rootMargin: '-35% 0px -60% 0px' });
+
+  obsTargets.forEach(t => observer.observe(t));
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        if (window.innerWidth <= 1100) sidebar.classList.remove('active');
+      }
+    });
+  });
+
+  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('resize', handleScroll);
+  handleScroll();
+
+  // =========================================================
+  // EXCEL VIEWER (SheetJS)
+  // =========================================================
+  const xlsModal = document.getElementById('xlsModal');
+  const xlsModalClose = document.getElementById('xlsModalClose');
+  const xlsTabs = document.getElementById('xlsTabs');
+  const xlsBody = document.getElementById('xlsBody');
+  const xlsBadge = document.getElementById('xlsBadge');
+  const xlsSheetInfo = document.getElementById('xlsSheetInfo');
+
+  let workbook = null;
+  let loadAttempted = false;
+
+  // Sheet alias mapping - hangi referans hangi sheet'i açar
+  const SHEET_ALIASES = {
+    // 2026 Plan perspektifleri
+    'a6': '06_A6_2026_Plan_Perspektif',
+    'a6_full': '06_A6_2026_Plan_Perspektif',
+    // A1-A5 idea sheet'leri
+    'a1': '01_A1_Hesaplama_Fikirleri',
+    'a2': '02_A2_Tatil_Bayram_Fikirleri',
+    'a3': '03_A3_OzelGun_Mesaj_Fikirleri',
+    'a4': '04_A4_Telekom_Sorgu_Fikirleri',
+    'a5': '05_A5_AI_Siber_Diger',
+    // Veri sheet'leri
+    'cluster': '07_B1_Cluster_Ozeti',
+    'rakip': '08_B2_Rakip_URL_Patternleri',
+    'dfs': '09_DfS_Dogrulama_TR',
+    // Niche cluster'lar
+    'hesaplama': '09_n_HESAPLAMA_DUNYA',
+    'tatil': '10_n_TATIL_BAYRAM_OZEL_GUN',
+    'telefon_ayar': '11_n_TELEFON_AYAR_SORUN',
+    'internet': '12_n_INTERNET_MODEM_WIFI',
+    'edevlet': '13_n_EDEVLET_SORGULAMA',
+    'mesaj': '14_n_MESAJ_SOZ_KART',
+    'nasil': '15_n_NASIL_YAPILIR',
+    'ne_zaman': '16_n_NE_ZAMAN',
+    'nedir': '17_n_TANIM_NEDIR',
+    'birim': '18_n_BIRIM_DONUSUM',
+    'kac': '19_n_KAC',
+    'klavye': '20_n_KLAVYE_SEMBOL',
+    'kelime': '21_n_KELIME_YAZIM_DIL',
+    'cv': '22_n_IS_BASVURU_CV',
+    'hukuk': '23_n_HUKUK_KANUN',
+    'saglik': '24_n_SAGLIK_VUCUT',
+    'konser': '25_n_KONSER_ETKINLIK',
+    'finans': '26_n_FINANS_BANKA_YATIRIM',
+    'burc': '27_n_BURC_ASTROLOJI',
+    'egitim': '28_n_EGITIM_SINAV',
+    'otomotiv': '29_n_OTOMOTIV',
+    'spor': '30_n_SPOR',
+    'oyun': '31_n_OYUN_REHBER',
+    'dizi': '32_n_DIZI_FILM',
+    'seyahat': '33_n_SEYAHAT_ULASIM',
+    'cocuk': '34_n_COCUK_BEBEK',
+    'hayvan': '35_n_HAYVANLAR',
+    'bitki': '36_n_BITKILER_BAHCE',
+    'beauty': '37_n_BEAUTY_KOZMETIK',
+    'ev': '38_n_EV_DEKOR_MOBILYA',
+    'yemek': '39_n_YEMEK_TARIF',
+    'sosyal': '40_n_SOSYAL_MEDYA_APP',
+    'cihaz': '41_n_TELEFON_CIHAZ',
+    'astronomi': '42_n_ASTRONOMI',
+    'diger': '43_n_DIGER_top500',
+    'tum': '44_TUM_60K_FIRSATLAR',
+    'ozet': '00_Yonetici_Ozeti'
+  };
+
+  function showXlsLoading() {
+    xlsBody.innerHTML = '<div class="xls-loading">Excel dosyası yükleniyor...</div>';
+  }
+
+  function showXlsFileLoader(err) {
+    xlsBody.innerHTML = `
+      <div class="xls-file-loader">
+        <p><strong>Excel otomatik yüklenemedi.</strong><br>
+        Bu HTML lokalden açıldığında tarayıcı kısıtlamaları nedeniyle dosyayı doğrudan okuyamaz.</p>
+        <p>Aşağıdaki butondan <code>TURKCELL_TRAFIK_FIRSATLARI.xlsx</code> dosyasını seçin:</p>
+        <label for="xlsFileInput">📁 Excel Dosyasını Seç</label>
+        <input type="file" id="xlsFileInput" accept=".xlsx,.xls">
+        <p style="margin-top:18px;font-size:12px;color:var(--ink-3);">${err || ''}</p>
+        <p style="margin-top:8px;font-size:12px;"><a href="TURKCELL_TRAFIK_FIRSATLARI.xlsx" download style="color:var(--coral);">veya tam Excel'i indir →</a></p>
+      </div>
+    `;
+    const input = document.getElementById('xlsFileInput');
+    if (input) {
+      input.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          try {
+            const data = new Uint8Array(ev.target.result);
+            workbook = XLSX.read(data, { type: 'array' });
+            renderXlsTabs();
+            const firstSheet = workbook.SheetNames[0];
+            renderXlsSheet(firstSheet);
+          } catch (err) {
+            xlsBody.innerHTML = `<div class="xls-error"><strong>Dosya okunamadı</strong>${err.message}</div>`;
+          }
+        };
+        reader.readAsArrayBuffer(file);
+      });
+    }
+  }
+
+  function renderXlsTabs() {
+    if (!workbook) return;
+    xlsTabs.innerHTML = '';
+    xlsBadge.textContent = workbook.SheetNames.length + ' sheet';
+    workbook.SheetNames.forEach((name, idx) => {
+      const tab = document.createElement('button');
+      tab.className = 'xls-tab';
+      tab.dataset.sheet = name;
+      // Kısa label - başlangıçtaki numarayı koru
+      tab.textContent = name.replace(/_/g, ' ').replace(/^(\d+)\s/, '$1 · ');
+      if (idx === 0) tab.classList.add('active');
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.xls-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        renderXlsSheet(name);
+      });
+      xlsTabs.appendChild(tab);
+    });
+  }
+
+  function renderXlsSheet(sheetName) {
+    if (!workbook) return;
+    const ws = workbook.Sheets[sheetName];
+    if (!ws) {
+      xlsBody.innerHTML = '<div class="xls-error">Sheet bulunamadı: ' + sheetName + '</div>';
+      return;
+    }
+    // Aktif tab'ı işaretle
+    document.querySelectorAll('.xls-tab').forEach(t => {
+      t.classList.toggle('active', t.dataset.sheet === sheetName);
+    });
+    // Active tab'ı viewport'a kaydır
+    const activeTab = document.querySelector('.xls-tab.active');
+    if (activeTab) activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+    // HTML render
+    const html = XLSX.utils.sheet_to_html(ws, { header: '', footer: '' });
+    // SheetJS table'a class ekle
+    const cleaned = html
+      .replace(/<table[^>]*>/, '<table class="xls-rendered-table">')
+      .replace(/<table[^>]*>([\s\S]*?)<\/table>/, (m, content) => {
+        return '<table class="xls-rendered-table">' + content + '</table>';
+      });
+    xlsBody.innerHTML = '<div class="xls-table-wrap">' + cleaned + '</div>';
+
+    // Sheet boyutu bilgisi
+    const range = ws['!ref'] ? XLSX.utils.decode_range(ws['!ref']) : null;
+    if (range) {
+      const rows = range.e.r + 1;
+      const cols = range.e.c + 1;
+      xlsSheetInfo.textContent = sheetName + ' · ' + rows + ' satır × ' + cols + ' sütun';
+    } else {
+      xlsSheetInfo.textContent = sheetName;
+    }
+  }
+
+  function openXlsModal(targetSheet) {
+    xlsModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    if (workbook) {
+      if (targetSheet) renderXlsSheet(targetSheet);
+      return;
+    }
+
+    if (loadAttempted) return;
+    loadAttempted = true;
+
+    showXlsLoading();
+    fetch('TURKCELL_TRAFIK_FIRSATLARI.xlsx')
+      .then(res => {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.arrayBuffer();
+      })
+      .then(buf => {
+        workbook = XLSX.read(new Uint8Array(buf), { type: 'array' });
+        renderXlsTabs();
+        const sheetToShow = targetSheet || workbook.SheetNames[0];
+        renderXlsSheet(sheetToShow);
+      })
+      .catch(err => {
+        showXlsFileLoader('Detay: ' + err.message);
+      });
+  }
+
+  function closeXlsModal() {
+    xlsModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  xlsModalClose.addEventListener('click', closeXlsModal);
+  xlsModal.addEventListener('click', (e) => {
+    if (e.target === xlsModal) closeXlsModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && xlsModal.classList.contains('active')) closeXlsModal();
+  });
+
+  // Tüm "Excel'de göster" linkleri/butonları
+  document.querySelectorAll('[data-xls-sheet]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const alias = el.dataset.xlsSheet;
+      const sheetName = SHEET_ALIASES[alias] || alias;
+      openXlsModal(sheetName);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

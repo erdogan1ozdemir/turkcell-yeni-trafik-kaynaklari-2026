@@ -1,0 +1,17 @@
+# Source data (large)
+www.turkcell.com.tr-content-gap-subdomains-t_2026-05-13_14-14-31.csv
+
+# Input reference files
+input/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local-only duplicates (kept at repo root)
+output/
+cikti/
