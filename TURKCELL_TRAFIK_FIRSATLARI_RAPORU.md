@@ -4,7 +4,6 @@
 **Veri Kaynakları:**
 - Ahrefs Content Gap Export (75.000 keyword, 60.715 fırsat)
 - DataForSEO doğrulama (Mayıs 2026, TR/tr, location_code 2792, **150+ keyword doğrulandı**)
-- Markaya iletilmiş referans Excel (`Telco - Alternatif Trafik Kaynağı Maddeleri.xlsx`)
 - Sunum görselleri (Verizon Coverage Map + Vodafone UK Data Calculator)
 
 **Mevcut benchmark:** Yüzde hesaplama, yaş hesaplama sayfaları
@@ -15,18 +14,18 @@
 
 İki ana bölüm + yeni perspektifler:
 
-- **BÖLÜM A1 (Hesaplama Hub)** — Calculator fikirleri ve kelime listeleri
-- **BÖLÜM A2 (Tatil & Bayram Hub)** — Mevcut `/kampanya/resmi-tatil-gunleri/` sayfasını genişletme (yeni sayfa açılmıyor)
-- **BÖLÜM A3 (Özel Gün & Mesaj)** — Özel günler + mesaj kartları
-- **BÖLÜM A4 (Telekom Yardım & Sorgu)** — Brand-uyumu en yüksek cluster
-- **BÖLÜM A5 (AI, Siber, Diğer)** — Tech blog ve niş fikirler
-- **BÖLÜM A6 (2026 Plan Perspektifleri)** — **YENİ**: Hava durumu, Data Calculator (Vodafone UK), Coverage Map (Verizon), Sınırsız Mecra Paketleri, Persona Tarifeleri, Teknoloji Sözlüğü, Tarife Karşılaştırma, Paket Listeleme Kategori İçerikleri
-- **BÖLÜM B** — Ahrefs CSV'sinden çıkarılan 35 niche cluster + tüm 60.715 keyword
+- **Bölüm: Hesaplama Araçları** — Hesap makinesi tarzı yardımcı araç önerileri ve kelime kümeleri
+- **Bölüm: Resmi Tatil Sayfasını Genişletme** — Mevcut sayfanın kapsamını genişletme önerisi; yeni URL açılmıyor
+- **Bölüm: Özel Gün ve Mesaj İçerikleri** — Anneler/Babalar Günü, mesaj galerileri, doğum günü mesajları
+- **Bölüm: Telekom Yardım ve Sorgu** — Brand güveniyle en kolay yakalanabilecek başlık grubu
+- **Bölüm: Teknoloji ve Tech Blog Konuları** — Yapay zeka, siber güvenlik, dizi/film, CV aracı, sosyal medya
+- **Bölüm: 2026 İçin Yeni Perspektifler** — Hava Durumu, Veri Kullanım Hesaplayıcı (Vodafone UK örneği), Kapsama Haritası (Verizon örneği), Sınırsız Mecra Paketleri, Persona Tarifeleri, Teknoloji Sözlüğü, Tarife Karşılaştırma, Paket Listeleme İçerikleri
+- **Veri ekleri** — 35 konu başlığı özeti ve toplam 60.715 anahtar kelimenin tam listesi (Excel App'te)
 
 ### Notasyon
 
-- **(\*)** işareti — daha önce markaya iletilmiş ya da üstüne konuşulmuş fikirler
-- ★★★ Acil — yüksek hacim + düşük KD + brand uyumu yüksek
+- **(\*)** işareti — bu başlığın ekipçe daha önce konuşulmuş olduğunu gösterir
+- ★★★ Öncelikli — yüksek arama hacmi, düşük zorluk skoru ve marka uyumu güçlü
 - ★★ Hızlı kazanım — orta hacim + orta KD
 - ★ Stratejik — düşük hacim ama yıllık spike veya brand uyumu
 
@@ -34,26 +33,26 @@
 
 ## YÖNETİCİ ÖZETİ
 
-### 2026 Plan İle Hizalama
+### Konu Başlıklarının Rapordaki Yerleri
 
-Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikirleriyle eşleşiyor:
+Aşağıdaki tablo, çalışma planı sırasında ekipçe konuşulan başlıkları bu raporun ilgili bölümleriyle eşliyor:
 
-| 2026 Planı | Bu Raporun Karşılığı | Hedef |
+| Konu Başlığı | Rapor Bölümü | Notlar |
 |---|---|---|
-| Hesaplama sayfaları | A1 ve A6.1 (Data Calculator) | 5.5M hacim → 500K+ click |
-| Alternatif mass trafik LP'ler | A6.2 (Hava durumu yeni LP), A3 (yeni LP), A2 (mevcut /kampanya/resmi-tatil-gunleri/ sayfasını genişletme) | 44M hacim → 500K+ click |
-| Paket listeleme sayfalarına içerik | A6.8 | %7-10 click artış |
-| Aylık düzenli blog | Tüm A4/A5 cluster'ları besler | %5-7 click artış |
-| Schema markup | Her sayfa tipinde önerildi | %6-10 click artış |
-| Persona odaklı tarifeler | A6.5 | 50K+ click |
-| Mecra bazlı (sınırsız YouTube/TikTok) paketler | A6.4 | %8 click artış |
-| Teknoloji sözlüğü | A6.6 | (Plan içinde önerildiği gibi) |
-| 4.5G karşılaştırma "fark" detayı | A6.7 | UX/CR odaklı |
-| Coverage Map (Verizon modeli) | A6.3 | Trend +%1614 quarterly |
+| Genel hesaplama / yardımcı araç sayfaları | Hesaplama Araçları ve Yeni Perspektifler / Veri Kullanım Hesaplayıcı | Toplam aylık 5,5 milyon arama |
+| Tek seferde yüksek trafik çekebilecek konu sayfaları | Yeni Perspektifler / Hava Durumu, Özel Gün ve Mesaj İçerikleri, Resmi Tatil Sayfası Genişletme | Toplam aylık 44 milyon arama; hava durumu en güçlü lokomotif |
+| Paket listeleme sayfalarına kategori içeriği | Yeni Perspektifler / Paket Listeleme | Mevcut sayfa trafiği üzerinde içerik genişletme |
+| Aylık düzenli blog içerikleri | Telekom Yardım ve Tech Blog Konuları başlıklarını besler | Konu havuzu hazır |
+| Schema markup uygulaması | Her sayfa tipinde uygulanacak | FAQPage, Event, BreadcrumbList önceliği |
+| Persona odaklı tarife sayfaları | Yeni Perspektifler / Persona Tarifeleri | Hacim düşük, kullanıcı niyeti yüksek |
+| Sınırsız mecra paketleri (YouTube, TikTok vb.) | Yeni Perspektifler / Sınırsız Mecra | Listelemede facet olarak da açılabilir |
+| Teknoloji sözlüğü | Yeni Perspektifler / Teknoloji Sözlüğü | Aylık 200 binin üzerinde doğrudan arama |
+| 4.5G - 5G karşılaştırma detayları | Yeni Perspektifler / Tarife Karşılaştırma | Mevcut pop-up genişletme; UX odaklı |
+| 5G Kapsama Haritası | Yeni Perspektifler / Kapsama Haritası | Verizon örneği; çeyreklik +%2.500 trend |
 
-### En Büyük 5 Yapısal Bulgu
+### Öne Çıkan 5 Bulgu
 
-1. **Hava durumu — 41M+ aylık toplam (mass-traffic LP'lerin lokomotifi).** "Hava durumu" tek başına **55.6M/ay** (DfS doğrulandı). 5 günlük (110K), 10 günlük (90K), yarınki (16.6M), saatlik (49K), il bazlı (İstanbul 7.5M, Ankara 6.1M, İzmir 3.4M). (\*) markaya iletilmişti.
+1. **Hava Durumu — Aylık 95 milyonu aşan toplam arama hacmi.** "Hava durumu" tek başına aylık 55,6 milyon arama (DfS doğrulandı). 5 günlük (110K), 10 günlük (90K), yarınki (16.6M), saatlik (49K), il bazlı (İstanbul 7.5M, Ankara 6.1M, İzmir 3.4M). (daha önce ekipçe konuşulmuştu).
 
 2. **Vatan Bilgisayar'ın `/hesap-makinesi` sayfası tek başına 33.991 aylık organik trafik alıyor** (48 keyword). "Hesap makinesi" tek başına **2.74M/ay**. Turkcell'in bu hub'ı yok.
 
@@ -63,20 +62,19 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 5. **Verizon Coverage Map modeli (/coverage-map) 7.041 keyword'de 109K trafik (toplam trafiğin %0.8'i, 65K sayfayla).** TR'de "5G kapsama alanı" yıllık trend **+%1025**, "5G kapsama haritası" **+%2500 quarterly**. Mega yükseliş trendi.
 
-### Toplam Adreslenebilir Hacim
+### Konu Başlıklarının Aylık Toplam Arama Hacmi
 
 | Cluster | Aylık Hacim |
 |---|---|
-| Hava durumu (A6.2) | ~95M (tüm varyantlar dahil) |
-| Hesaplama hub (A1) | ~5.5M |
-| Resmi tatil & bayram (A2 - mevcut sayfa genişletme) | ~10M |
-| Özel gün & mesaj (A3) | ~5M |
-| Telekom yardım (A4) | ~3M |
-| AI / Siber / Diğer (A5) | ~3M |
-| Sınırsız paket + persona + sözlük (A6) | ~250K (direkt) + dolaylı CR etkisi |
-| **TOPLAM** | **~120M+ adreslenebilir** |
+| Hava Durumu | ~95 milyon (tüm varyasyonlar dahil) |
+| Hesaplama Araçları | ~5,5 milyon |
+| Resmi Tatil Sayfası (mevcut sayfa genişletme) | ~10 milyon |
+| Özel Gün ve Mesaj İçerikleri | ~5 milyon |
+| Telekom Yardım ve Sorgu | ~3 milyon |
+| Teknoloji ve Tech Blog Konuları | ~3 milyon |
+| Yeni Perspektifler (sınırsız paket, persona, sözlük vb.) | ~250 bin doğrudan + dolaylı dönüşüm etkisi |
+| **Toplam** | **Aylık 120 milyonu aşan toplam arama hacmi** |
 
-**Tahmini realize edilebilir trafik (12-18 ayda, 3-10 pozisyon hedefiyle):** 500K-1M+/ay.
 
 ---
 
@@ -92,9 +90,9 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ---
 
-# BÖLÜM A — KENDİ ARAŞTIRMA + DataForSEO Doğrulama
+# Konu Başlıkları + Anahtar Kelime Verisi
 
-## A1. HESAPLAMA ARAÇLARI HUB
+## Hesaplama Araçları
 
 ### A1.1 Genel Matematik & Yardımcı Hesaplayıcılar
 
@@ -105,9 +103,9 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 | Ana Sayfa | Aylık Hacim | KD | Öncelik | Not |
 |---|---|---|---|---|
 | hesap makinesi (ana hub) | **2.740.000** | düşük | ★★★ | |
-| **yüzde hesaplama (MEVCUT) (\*)** | 673.000 | 12 | ★★★ | Markaya iletilmiş |
-| **yaş hesaplama (MEVCUT) (\*)** | 301.000 | 9 | ★★★ | Markaya iletilmiş |
-| **kaç gün kaldı hesaplama (\*)** | 33.100 (ana) + 1.4M küme | düşük | ★★★ | Markaya iletilmiş |
+| **yüzde hesaplama (MEVCUT) (\*)** | 673.000 | 12 | ★★★ | Daha önce konuşulmuş |
+| **yaş hesaplama (MEVCUT) (\*)** | 301.000 | 9 | ★★★ | Daha önce konuşulmuş |
+| **kaç gün kaldı hesaplama (\*)** | 33.100 (ana) + 1.4M küme | düşük | ★★★ | Daha önce konuşulmuş |
 
 **Oynanabilecek varyasyon listesi (2.74M+ ek hacim):**
 - `hesap makinesi` (2.170.000), `bilimsel hesap makinesi` (10K), `fonksiyonlu hesap makinesi` (1.5K)
@@ -128,7 +126,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 - **`indirim hesaplama` (\*) — DfS 49.500/ay** (markaya iletildi, "yüzde hesaplama"nın altında veya ayrı sayfa)
 - `yüzde formülü`, `yüzdelik dilim hesaplama`
 
-#### Fikir 4: **/kac-gun-kaldi-hesaplama/** (\*) **MARKAYA İLETİLMİŞ**
+#### Fikir 4: **/kac-gun-kaldi-hesaplama/** (\*) **DAHA ÖNCE KONUŞULMUŞ**
 - **DfS hacim:** kaç gün kaldı 33.100/ay + küme toplam 1.4M
 - **Varyasyon listesi:**
 - `kaç gün kaldı`, `kaç gün kaldı hesaplama` (3.600), `bayrama kaç gün kaldı` (2.600)
@@ -140,7 +138,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ### A1.2 Finans / Maaş Hesaplayıcıları ★★★
 
-#### Fikir 5: **/brutten-nete-maas-hesaplama/** (\*) **MARKAYA İLETİLMİŞ**
+#### Fikir 5: **/brutten-nete-maas-hesaplama/** (\*) **DAHA ÖNCE KONUŞULMUŞ**
 - **DfS:** brüt net hesaplama 8.100/ay + varyasyon küme 491K
 - Vodafone tek sayfa 7.365 trafik / 110 keyword
 
@@ -152,7 +150,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 - **`asgari ücret 2026` (368.000/ay, KD 9!, +%210K yıllık trend)** — bu sayfanın canlı tablo bileşeni olmalı
 - `maaş hesaplama 2026` (2.100)
 
-#### Fikir 6: **/kdv-hesaplama/** (\*) **MARKAYA İLETİLMİŞ**
+#### Fikir 6: **/kdv-hesaplama/** (\*) **DAHA ÖNCE KONUŞULMUŞ**
 - **DfS:** KDV hesaplama 201.000/ay, KD 19
 - **Varyasyon listesi:**
 - `kdv hesaplama`, `kdv hesaplama formülü`, `kdv dahil hesaplama`, `kdv hariç hesaplama`
@@ -229,7 +227,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 - Karakter sayacı (14.800, **KD 3**) — `karakter sayma`, `kaç karakter`, sosyal medya araçları
 - Kelime sayacı (18.100, KD 12) — `kelime sayma`, `kelime sayısı bulma`
 - Büyük harf küçük harf çevirici (~5K) — `büyük harf yapma`, `caps lock`
-- **`kb to gb dönüştürücü` (\*) markaya iletilmiş** — telekom için anlamlı + birim çevirici kümesine bağlanır
+- **`kb to gb dönüştürücü` (\*) daha önce konuşulmuş** — telekom için anlamlı + birim çevirici kümesine bağlanır
 - Klavye sembolleri hub: `et işareti @ nasıl yapılır` (5.700+5.6K+3.5K+3.1K = ~17K küme), `noktalama işaretleri` (40.500, KD 4)
 - QR kod oluşturucu, şifre oluşturucu, lorem ipsum, sayı yazıyla yazma
 
@@ -253,7 +251,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 - İnç-cm çevirici (TV) — 100K+ alt varyantlar
 - Kg-libre, metre-km, litre-ml çevirici
 - Celsius-Fahrenheit, saat-dakika
-- **`kb to gb dönüştürücü` (\*)** — markaya iletilmiş, GB-MB telekom-özel
+- **`kb to gb dönüştürücü` (\*)** — daha önce konuşulmuş, GB-MB telekom-özel
 - Mil-km, feet-metre, mm-cm
 - Döviz çevirici (74.000, KD 32)
 - 1 gb kaç mb (5.400), 1 mb kaç kb, 1 tb kaç gb (telekom-özel!)
@@ -270,7 +268,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ---
 
-## A2. RESMİ TATİL & BAYRAM HUB ★★★ — Mevcut Sayfayı Genişletme
+## Resmi Tatil Sayfasını Genişletme (Mevcut Sayfa)
 
 > **Önemli karar:** A2 için **yeni sayfa açılmıyor, alt sayfa oluşturulmuyor.** Mevcut `https://www.turkcell.com.tr/kampanya/resmi-tatil-gunleri/` sayfası tatil & bayram cluster'ının tamamı için tek hub olarak genişletilecek.
 
@@ -364,7 +362,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ---
 
-## A3. ÖZEL GÜNLER + MESAJ / SÖZ / KART ★★★
+## Özel Gün ve Mesaj İçerikleri
 
 ### A3.1 "Ne Zaman" Sayfaları
 
@@ -420,13 +418,13 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ---
 
-## A4. TELEKOM-ÖZEL BİLGİ & YARDIM ★★★
+## Telekom Yardım ve Sorgu
 
 ### A4.1 Mobil & Telefon Yardım
 
 #### Fikir 33: **/mobil-yardim-hub/**
 **Alt sayfa fikirleri + varyasyonlar (en yüksek hacimli):**
-- **`güvenli arama nasıl kapatılır` (\*) 20.000, KD 0** — markaya iletilmiş
+- **`güvenli arama nasıl kapatılır` (\*) 20.000, KD 0** — daha önce konuşulmuş
 - NFC özelliği nedir/nasıl açılır (23.000 küme, KD 0-2)
 - Konum nasıl atılır / paylaşılır (10.000), konum (132.000)
 - Kendi numaramı öğrenme (3.600)
@@ -434,9 +432,9 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 - 5G nedir (9.900, KD 29) / 5G destekleyen telefonlar
 - Mobil imza / e-imza nasıl alınır (10.000)
 - Numara taşıma rehberi
-- **`telefon IMEI sorgulama` (\*) — DfS 550.000/ay, KD 14** — markaya iletilmiş ★★★
+- **`telefon IMEI sorgulama` (\*) — DfS 550.000/ay, KD 14** — daha önce konuşulmuş ★★★
 - Cayma bedeli hesaplama (3K, KD 0)
-- **`gizli numara kapatma` (\*) — DfS 27.100/ay** — markaya iletilmiş; Turkcell'in mevcut destek sayfaları çoklu URL ile dağınık, tek hub'a toplanmalı
+- **`gizli numara kapatma` (\*) — DfS 27.100/ay** — daha önce konuşulmuş; Turkcell'in mevcut destek sayfaları çoklu URL ile dağınık, tek hub'a toplanmalı
 - `gizli numara nasıl aranır` (6.600), `gizli numarayı reddet`
 - Telefon format atma (5.4K), ekran görüntüsü (3.3K), iPhone nasıl kapatılır (3.7K)
 
@@ -491,7 +489,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ---
 
-## A5. AI, SİBER, DİĞER ★★
+## Teknoloji ve Tech Blog Konuları
 
 ### Fikir 39: **/siber-guvenlik-rehberi/** ★★★
 - Siber güvenlik (9.900, KD 10)
@@ -536,9 +534,9 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 ---
 
-# A6. 2026 PLAN PERSPEKTİFLERİ (YENİ EKLENEN)
+# 2026 İçin Yeni Perspektifler
 
-> Markaya iletilen 2026 plan ve sunum perspektifleri burada detaylandırılıyor. Bu bölüm **8 yeni fikir** içeriyor.
+> Daha önce konuşulan 2026 plan ve sunum perspektifleri burada detaylandırılıyor. Bu bölüm **8 yeni fikir** içeriyor.
 
 ## A6.1 Veri / Data Kullanım Hesaplayıcı ★★★ (Vodafone UK Modeli)
 
@@ -553,7 +551,7 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 - `1 saat film kaç gb`, `1 saat youtube ne kadar veri`, `1 saat netflix kaç gb`
 - `1 gb kaç saat youtube`, `5 gb ne kadar yeter`, `10 gb ne kadar yeter`
 - `1 gb kaç mb` (5.400/ay), `mb gb dönüştürücü`
-- **`kb to gb dönüştürücü` (\*) — markaya iletilmiş**
+- **`kb to gb dönüştürücü` (\*) — daha önce konuşulmuş**
 - `data calculator turkcell`, `tarife öneri`
 
 **Sayfa içerisindeki FAQ (AI optimizasyonu için):**
@@ -565,10 +563,10 @@ Markanın 2026 ana hedefi: **+5M click**. Aşağıdaki maddeler bu raporun fikir
 
 **Tahmini hacim:** Vodafone UK örneği TR'de ~5-10K direkt arama + dolaylı paket trafiği. CR etkisi büyük.
 
-## A6.2 Hava Durumu Mega-Hub ★★★ (\*) MARKAYA İLETİLMİŞ
+## A6.2 Hava Durumu Mega-Hub ★★★ (\*) DAHA ÖNCE KONUŞULMUŞ
 
 #### Fikir 47: **/hava-durumu/** + il alt sayfaları (mass-traffic LP)
-- **Markaya iletilmiş:** Aylık küme 41.6M (referans Excel)
+- **Daha önce konuşulmuş:** Aylık küme 41.6M (referans Excel)
 - **DfS doğrulanmış (Mayıs 2026):**
 
 | Keyword | Aylık Hacim | KD |
